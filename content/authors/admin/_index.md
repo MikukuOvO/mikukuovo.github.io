@@ -47,6 +47,17 @@ education:
       Scientific research content:
       - Machine Learning with Graphs
       - Generative Models on Graphs   
+  - area: Scientific research on Convolutional Neural Network
+    institution: Summer Research Program (Shanghai)
+    date_start: 2023-05-01
+    date_end: 2023-08-01
+    summary: |2-
+      Supervisor:
+      Prof. **Pavlos Protopapas**
+
+      Scientific research content:
+      - Convolutional Neural Network
+      - Object Detection
   - area: B.E. Computer Science
     institution: Wuhan University
     date_start: 2021-09-01
