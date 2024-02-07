@@ -36,11 +36,22 @@ profiles:
     url: https://github.com/MikukuOvO
 
 education:
+  - area: Scientific research on Machine Learning with Graphs
+    institution: Hong Kong University of Science and Technology (Remote)
+    date_start: 2024-01-01
+    date_end: ''
+    summary: |2-
+      Supervisor:
+      Prof. **Jing TANG** & Dr. Yifan SONG
+
+      Scientific research content:
+      - Machine Learning with Graphs
+      - Generative Models on Graphs   
   - area: B.E. Computer Science
     institution: Wuhan University
     date_start: 2021-09-01
     date_end: ''
-    summary: |
+    summary: |2-
       GPA: 3.62/4.0
       
       Courses included:
@@ -48,6 +59,12 @@ education:
       - Algorithm design and analysis: 94/100
       - Computer Network: 93/100
 
+      Supervisor:
+      Prof. **Jian WANG** & Dr. DuanTengChuan LI
+
+      Scientific research content:
+      - Machine Learning with Graphs
+      - Contrastive Learning on Graphs
 work:
   - position: Algorithm Intern
     company_name: Huawei Wuhan Research Institute
@@ -55,7 +72,10 @@ work:
     company_logo: ''
     date_start: 2024-01-01
     date_end: ''
-    summary: |
+    summary: |2-
+      Supervisor:
+      Senior Engineer **Jinyao Xie**
+
       Responsibilities include:
       - Develop methods to identifying different types of network source nodes with the given graph
       - Introduce graph machine learning methods combined with traditional graph algorithm to handle the network structre diagram has a large number of access rings
@@ -66,7 +86,10 @@ work:
     company_logo: ''
     date_start: 2023-09-01
     date_end: 2024-01-31
-    summary: |
+    summary: |2-
+      Supervisor:
+      Prof. **Jingjue Jiang**
+
       Responsibilities include:
       - Guiding the students in course study
       - Guiding the students carrying out experiments of the course
@@ -106,10 +129,8 @@ skills:
         icon: dogs
 
 languages:
-  - name: Chinese
-    percent: 100
-  - name: English
-    percent: 80
+  - name: TOFEL
+    percent: 93
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -135,8 +156,9 @@ awards:
     # certificate_url: https://www.datacamp.com
     date: '2023-01-21'
     awarder: China Computer Federation(CCF)
+    icon: ccf
     summary: |
-      **First Prize**
+      **First Prize** 
 ---
 
 ## I am currently an Undergraduate student in Wuhan University
