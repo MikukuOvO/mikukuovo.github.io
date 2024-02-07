@@ -55,8 +55,13 @@ education:
       Supervisor:
       Prof. **Pavlos Protopapas**
 
-      Scientific research content:
+      Courses included:
       - Convolutional Neural Network
+      - Autoencoders
+      - Transfer learning and SOTA models
+      - 10 Sessions & 8 Labs
+      
+      Scientific research content:
       - Object Detection
   - area: B.E. Computer Science
     institution: Wuhan University
