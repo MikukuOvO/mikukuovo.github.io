@@ -40,94 +40,74 @@ profiles:
     url: https://www.instagram.com/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: B.E. Computer Science
+    institution: Wuhan University
+    date_start: 2021-09-01
+    date_end: ''
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
+      GPA: 3.62/4.0
       
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Linear Algebra: 97/100
+      - Algorithm design and analysis: 94/100
+      - Computer Network: 93/100
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Algorithm Intern
+    company_name: Huawei Wuhan Research Institute
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-01-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Develop methods to identifying different types of network source nodes with the given graph
+      - Introduce graph machine learning methods combined with traditional graph algorithm to handle the network structre diagram has a large number of access rings
+      - Use layout algorithm to visualize the given graph
+  - position: Teaching Assistant for the Data Structures course
+    company_name: Wuhan University
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-09-01
+    date_end: 2024-01-31
+    summary: |
+      Responsibilities include:
+      - Guiding the students in course study
+      - Guiding the students carrying out experiments of the course
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
+      - name: C++
+        description: ''
+        percent: 95
+        icon: code-bracket
       - name: Python
         description: ''
         percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: Pytorch
         description: ''
-        percent: 40
+        percent: 80
         icon: circle-stack
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
       - name: Cats
         description: ''
-        percent: 100
+        percent: 90
         icon: cat
       - name: Photography
         description: ''
         percent: 80
         icon: camera
+      - name: Dogs
+        description: ''
+        percent: 80
+        icon: dogs
 
 languages:
   - name: English
@@ -169,14 +149,13 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## I live in San Francisco, designing large language models at OpenAI.
+## I am currently an Undergraduate student in Wuhan University
 
-I am a research scientist at Open AI where I am currently working on training ChatGPT v100.
+I plan to persue a **MS/PhD** degree in the United States. My goal is to enhance my research and engineering skills in my field of interest, and I hope to engage with experts in related areas and receive their guidance.
 
 My research interests include:
 
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- **Machine Learning with Graphs**
+- **Self-supervised Learning on Graphs**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie lacus nec finibus bibendum. Nullam turpis nibh, viverra quis libero at, pharetra laoreet magna.
+### Cherish the side & Live well～

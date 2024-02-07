@@ -13,3 +13,5 @@ mounts:
   - source: blox
     target: layouts/partials/blox/
     includeFiles: '**.html'
+
+proxy: https://goproxy.cn
