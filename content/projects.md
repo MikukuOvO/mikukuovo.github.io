@@ -26,5 +26,5 @@ sections:
         - title: WHU-OPCP-Platfrom
           description: An OPCP platfrom built with Vue + Django, with CGROUP & docker used for the judger, which gives an stable & interactive environment
           image: pytorch.png
-          url: https://github.com/MikukuOvO/PytorchGAT
+          url: https://github.com/hz826/WHU-OPCP
 ---
