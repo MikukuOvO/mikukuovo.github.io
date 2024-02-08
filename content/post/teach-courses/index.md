@@ -1,7 +1,7 @@
 ---
 title: 👩🏼‍🏫 Teach academic courses
 summary: Embed videos, podcasts, code, LaTeX math, and even test students!
-date: 2023-10-24
+date: 1970-01-01
 math: true
 tags:
   - Hugo
