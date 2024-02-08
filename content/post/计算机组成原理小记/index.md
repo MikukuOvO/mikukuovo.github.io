@@ -542,7 +542,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 下图为几个基本的指令格式对应的所有信号的输出：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5914221e-8bff-432c-94a9-a696790baa6c/Untitled.png)
+![alt text](naivesig.png)
 
 注意当 $\operatorname{RegWrite}$ 信号为 $0$ 的时候，$\operatorname{MemtoReg}$ 字段无关紧要：因为寄存器没有被写入，寄存器写端口的数据值不被使用，所以最后两行中的 $\operatorname{MemtoReg}$ 值由于不被关心而被 $\operatorname{X}$ 取代。
 
@@ -556,7 +556,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
     
     下图为执行 $\operatorname{R}$ 型指令时数据通路的操作：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6448b345-f8d8-4ea1-9ae2-87027904f04e/Untitled.png)
+    ![alt text](rdatapath.png)
     
 - $\operatorname{load}$ 指令的数据通路操作，例如 `ld x1, offset(x2)` ，按照以下步骤进行：
     1. 取出指令，$\operatorname{PC}$ 自增。
@@ -567,7 +567,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
     
     下图为执行 $\operatorname{load}$ 型指令时数据通路的操作：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d60493e6-df6a-46e4-af80-b4a06d1479fd/Untitled.png)
+    ![alt text](loaddatapath.png)
     
 - $\operatorname{store}$ 指令的数据通路操作与 $\operatorname{load}$ 指令类似，主要区别在于**存储器控制将指明操作是写而不是读**，**读出的第二个寄存器的值将作为要存储的数据**，并且**不存在将数据存储器的内容写入寄存器堆的操作**。
 - $\operatorname{beq}$ 指令的数据通路操作，例如 `beq x1, x2, offset` ，按照以下步骤进行：
@@ -578,7 +578,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
     
     下图为执行 $\operatorname{beq}$ 型指令时数据通路的操作：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adbed237-7b4d-48ed-801e-340a123f5ee3/Untitled.png)
+    ![alt text](beqdatapath.png)
     
 
 ## 流水线概述
@@ -595,7 +595,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
 
 下图为单周期的指令执行和流水线的指令执行，在这种情况下，我们看到指令的平均执行时间从 $\operatorname{800ps}$ 降低到 $\operatorname{200ps}$，速度提高了 $4$ 倍。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d510b571-15c7-47ca-bb06-31e5166e0ba6/Untitled.png)
+![alt text](pipeline.png)
 
 事实上，在本例中性能并没有达到所预期的四倍，这是因为指令的数量不够多，当指令的数目足够多的时候，真是程序执行时间的比值接近于指令执行时间的比值，**性能提升的倍数**逼近于**流水线级数**。
 
@@ -638,7 +638,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
     
     一般通过前递解决的数据冒险如下图所示：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2beed0ca-c248-45df-8fd7-ec2624308a81/Untitled.png)
+    ![alt text](forwarddatahz.png)
     
     但是，有这样的一类特殊的数据冒险，我们一般称为**载入-使用型数据冒险**：
     
@@ -653,7 +653,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
     
     而对于这一类数据冒险，我们一般使用**硬件检测和停顿**，或由**软件对代码进行重新排序**以尽量避免载入-使用型流水线停顿。
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e4f3c64b-5a96-4e41-9faf-3dc1bd5d15c0/Untitled.png)
+    ![alt text](loadusedatahz.png)
     
 - 控制冒险
     
@@ -667,7 +667,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
         
         通过这些硬件资源，包含条件分支指令的流水线如下图所示，这里每**遇到条件分支指令就停顿以避免控制冒险**。
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57e97be2-8592-4ada-85fe-ad6fc20f9ebf/Untitled.png)
+        ![alt text](controldatahz.png)
         
         对于较长的流水线而言，通常无法在第二阶段解决分支指令的问题，那么就会导致更严重的速度下降。
         
@@ -686,37 +686,36 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
 
 下图为单周期数据通路划分成五个部分的五级流水线的数据通路。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53b34ef9-9fea-4c4c-b4da-a0b2f01b5032/Untitled.png)
+![alt text](simplecycletofive.png)
 
 指令执行的每一步都从左至右地映射到数据通路中，唯一例外是 **$\operatorname{PC}$ 更新**与**写回寄存器堆的步骤**。
 
 为了保留在其他四个阶段中指令的值，必须把从指令寄存器中读取的数据保存在寄存器中，类似的理由适用于每个流水线阶段，所以我们**必须将寄存器放置在每个阶段之间的分隔线上**，如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6d730c7-a9b1-4177-a6c2-4d65fd5b6653/Untitled.png)
+![alt text](pipelinereg.png)
 
 接下来我们以 `ld` 指令为例，展示其在流水线中的五个阶段：
 
 1. 取指：使用 $\operatorname{PC}$ 中的地址从存储器中读取指令，然后将指令放入 $\operatorname{IF/ID}$ 流水线寄存器中。$\operatorname{PC}$ 中的地址自增 $4$，然后写回 $\operatorname{PC}$，以为下一时钟周期做准备，这个 $\operatorname{PC}$ 值也保存在 $\operatorname{IF/ID}$ 流水线寄存器中，以备后续的指令使用（例如 `beq`）。
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2cd83420-a82b-4fd5-8e28-1e4a14ba8818/Untitled.png)
+    ![alt text](ldif.png)
     
 2. 指令译码和读寄存器堆：$\operatorname{IF/ID}$ 流水线寄存器的指令部分提供一个 $64$ 位符号扩展的立即数字段，以及两个将要读取的寄存器编号。所有这三个值都与 $\operatorname{PC}$ 地址一起存储在 $\operatorname{ID/EX}$ 流水线寄存器中，这里我们再次向右传递在之后的时钟周期内指令可能用到的所有信息。
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/517bf8a3-03c3-4923-88c6-d95f04e1d59b/Untitled.png)
+    ![alt text](ldid.png)
     
 3. 执行或地址计算：加载指令从 $\operatorname{ID/EX}$ 流水线寄存器中读取一个寄存器的值和一个符号扩展的立即数，并且使用 $\operatorname{ALU}$ 部件将它们相加，它们的和被存储在 $\operatorname{EX/MEM}$ 流水线寄存器中。
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c433655f-8abe-477d-8ab2-d938adebb988/Untitled.png)
+    ![alt text](ldex.png)
     
 4. 存储器访问：加载指令使用来自 $\operatorname{EX/MEM}$ 流水线寄存器中的地址读取数据存储器，并将数据存入 $\operatorname{MEM/WB}$ 流水线寄存器中。
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48cfc721-a8e3-4163-999a-3c39575f6f09/Untitled.png)
+    ![alt text](ldmem.png)
     
 5. 从 $\operatorname{MEM/WB}$ 流水线寄存器中读取数据，并将它写入图中间的寄存器堆中。
 
 上图中存在一个错误，在最后 $\operatorname{WB}$ 阶段的时候，改写的寄存器号是由 $\operatorname{IF/ID}$ 提供的，而这并非是原 `ld` 指令写回的寄存器号，所以我们做如下的修改。
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c74e1ebe-a8f8-4734-8c5d-33671a7f76c1/Untitled.png)
+    ![alt text](ldwb.png)
 
 ### 流水线控制
 
@@ -730,19 +729,19 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
 
 根据上述的过程，我们给出下图的流水线数据通路，将控制信号连接到流水线寄存器的控制部分，**在译码阶段创建之后三个阶段的控制值**，然后将其**置于 $\operatorname{ID/EX}$ 流水线寄存器中**，流水线**每个阶段使用相应的控制线**，**其余的控制线被传递到下一个流水线阶段中**，大致如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/194793ed-c689-44df-85b6-e993fb826b75/Untitled.png)
+![alt text](pipectli.png)
 
 ## 数据冒险：前递与停顿
 
 在前面的内容中，我们讨论过两类不同的数据冒险，这里，我们首先详细的讨论下第一种可以通过前推解决的数据冒险，我们还是可以将他们分为两类：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af318d26-5feb-4db3-92e6-2f72a85f5b02/Untitled.png)
+![alt text](exdatahz.png)
 
 - $\operatorname{EX}$ 冒险（上图中第一条指令与第二条指令产生的数据冒险）：
     
     判断方法：通过判断 $**\operatorname{ID/EX}$ 流水线寄存器中的源寄存器号**和 $**\operatorname{EX/MEM}$ 流水线寄存器中的目的寄存器号**是否相等，注意还要判断不为 $0$ 号寄存器并且指令需要写回寄存器，即：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/326b6d92-b7e1-4231-a403-b6a739653d61/Untitled.png)
+    ![alt text](exdatahzcode.png)
     
     解决这一类的冒险，我们只需要将 $\operatorname{ALU}$ 的操作数替换为来自上一个 $\operatorname{ALU}$ 计算结果的前递即可。
     
@@ -750,7 +749,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
     
     判断方法：通过判断 $\operatorname{ID/EX}$ **流水线寄存器中的源寄存器号**和 $**\operatorname{MEM/WB}$ 流水线寄存器中的目的寄存器号**是否相等，剩余条件与 $\operatorname{EX}$ 冒险相同，即：
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32205e33-8c90-4cb7-94e4-c2823780c0a3/Untitled.png)
+    ![alt text](memdatahz.png)
     
     解决这一类的冒险，我们只需要将 $\operatorname{ALU}$ 的操作数替换为来自数据储存器或者更早的 $\operatorname{ALU}$ 计算结果的前递即可。
     
@@ -765,7 +764,7 @@ add x1, x1, x4
 
 这时候我们就需要考虑优先级的问题，所以我们修正 $\operatorname{MEM}$ 冒险的判断条件：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e531adb2-7413-4a21-8362-4c41ea479147/Untitled.png)
+![alt text](modifydatahz.png)
 
 下图为各个多选器的控制值：
 
