@@ -1,6 +1,6 @@
 ---
 title: 计算机组成原理小记
-summary: 计算机组成原理复习资料
+summary: CS408 课程计算机组成原理的内容梳理，以 RISC-V 作为基础架构
 date: 2023-06-01
 tags:
   - Computer Architecture
@@ -132,9 +132,10 @@ $\operatorname{RISC-V}$ 指令中的**算术运算**只作用于**寄存器**。
 
 地址：用于描述内存数组中特定数据元素位置的值。
 
-由于 **$8$ 位字节**在许多程序中非常有用，所以几乎所有的体系结构都是按单个字节寻址的，例如$\operatorname{RISC-V}$ 就使用**字节寻址**，因此**顺序双字访问相差 $8$，**下图为实际的 $\operatorname{RISC-V}$ 内存地址和这些内存中双字的内容。
+由于 **$8$ 位字节**在许多程序中非常有用，所以几乎所有的体系结构都是按单个字节寻址的，例如$\operatorname{RISC-V}$ 就使用**字节寻址**
+，因此 **顺序双字访问相差 $8$**，下图为实际的 $\operatorname{RISC-V}$ 内存地址和这些内存中双字的内容。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3bc2cad-dd34-4f87-ad83-6762054330c2/Untitled.png)
+![alt text](riscvaddress.png)
 
 计算机分为两种，一种使用最左边或 “大端” 字节的地址作为双字地址，另一种使用最右端或 “小端” 字节的地址作为双字地址，根据上面的讲述，我们知道 $\operatorname{RISC-V}$ 属于小端编址。
 
@@ -158,7 +159,7 @@ $\operatorname{RISC-V}$ 指令都是 $32$ 位，刚好是一个字或一个双�
 
 首先给出六种不同指令类型的**指令格式**：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e652f3b-7402-498b-8121-fb9f659b02c8/Untitled.png)
+![alt text](sixinsformat.png)
 
 ### R 型指令
 
@@ -178,7 +179,7 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{R}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a869be4f-adbe-4005-bc09-7a7f15abdf75/Untitled.png)
+![alt text](rtypeformat.png)
 
 ### I 型指令
 
@@ -198,11 +199,9 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{I}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b880292-28a1-40e7-bc72-dfade0c3cd3f/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d2c0a5d3-01c8-47a8-997b-708c9a2d1f05/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37fccd41-559e-4b4b-9c58-43992ae1ff4d/Untitled.png)
+![alt text](itypeformat1.png)
+![alt text](itypeformat2.png)
+![alt text](itypeformat3.png)
 
 ### S 型指令
 
@@ -212,7 +211,7 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{S}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/87519dae-8346-4776-8378-6f35dab5f77e/Untitled.png)
+![alt text](stypeformat.png)
 
 ### B(SB) 型指令
 
@@ -226,7 +225,7 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{B}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53266692-dea9-4c12-89ee-bdd882409426/Untitled.png)
+![alt text](sbtypeformat.png)
 
 ### U 型指令
 
@@ -240,7 +239,7 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{U}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73422948-2f7c-4db7-9934-3070017186a6/Untitled.png)
+![alt text](utypeformat.png)
 
 ### J 型指令
 
@@ -253,7 +252,7 @@ $\operatorname{rs1},\operatorname{rs2}$：源操作数寄存器。
 
 各个 $\operatorname{J}$ 型指令的指令格式如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/940b0b68-be45-4f8d-b56e-7aaccff07078/Untitled.png)
+![alt text](jtypeformat.png)
 
 ## 计算机硬件对过程的支持
 
@@ -301,19 +300,19 @@ $\operatorname{C}$ 语言有两种存储方式：动态的和静态的，在**�
 
 下图为过程调用之前、之中和之后栈的分配情况。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4394e6e-64e7-403b-ba47-afb361ef888e/Untitled.png)
+![alt text](stackallo.png)
 
 ### 在堆中为新数据分配空间
 
 除了**动态变量（对于过程局部有效）**之外，还需要为**静态变量**和**动态数据结构**分配内存空间，存放数组和链表这类数据结构的段通常称为**堆**，下图为程序和数据的 $\operatorname{RISC-V}$ 内存分配。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/17225e26-d773-4cf9-bdce-354c7f5c833d/Untitled.png)
+![alt text](heapallo.png)
 
 这种分配允许**栈和堆相向而长**，从而随着这两个段的此消彼长达到内存的高效使用。
 
 下图总结了 $\operatorname{RISC-V}$ 汇编语言的寄存器约定，这种约定使得**大多数过程**可以使用多达 $8$ 个参数寄存器、$12$ 个保留寄存器和 $7$ 个临时寄存器而**无需进入内存**。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/80c3c623-0a32-4aae-a1c4-6c6acfb9bc88/Untitled.png)
+![alt text](regfunc.png)
 
 如果参数超过 $8$ 个，$\operatorname{RISC-V}$ 约定将栈中额外的参数放在帧指针的上方，过程期望前 $8$ 个参数在寄存器 $x_{10}$ 到 $x_{17}$ 中，其余参数在内存中，可通过帧指针寻址。
 
@@ -325,7 +324,7 @@ $\operatorname{PC}$ 相对寻址：一种寻址方式，它的地址是 $\operat
 
 ### RISC-V 寻址模式总结
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3df3a958-1dbd-4eb5-be1f-a938c31fbe54/Untitled.png)
+![alt text](addressing.png)
 
 通过双指令序列 `lui` 和 `jalr` ，$\operatorname{RISC-V}$ 支持跳转到任何的 $32$ 位地址。
 
@@ -348,9 +347,8 @@ sd x0, 0(x20) // 解除 (x20) 位置的锁定
 
 ## RISC-V 核心指令系统
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4355b1f-4130-4b90-ba39-e21c3a29d047/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/360da431-7686-49f8-8d59-7dfcbac1d843/Untitled.png)
+![alt text](instsys1.png)
+![alt text](instsys2.png)
 
 ## 浮点运算
 
@@ -374,15 +372,15 @@ $\operatorname{S}$ 是符号位，$\operatorname{F}$ 是尾数字段中表示的
 
 双精度浮点数需要一个 $\operatorname{RISC-V}$ 双字才能表示。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4cc5e6b8-5b4e-4c32-979c-74803e980628/Untitled.png)
+![alt text](doublerep.png)
 
 单精度：以 $32$ 位字表示的浮点值。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e05f4542-b9e5-4416-8bf8-3849fbd5f2da/Untitled.png)
+![alt text](floatrep.png)
 
 $\operatorname{IEEE}754$ 浮点数的编码如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c66496dc-3f69-4d5f-8ed4-ce1215a6e9df/Untitled.png)
+![alt text](ieee754rep.png)
 
 对于规格化数，浮点数表示的值实际上是：
 
@@ -402,7 +400,7 @@ $$
 
 流程图如下所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/afbb55a3-4075-402b-b948-c0fb4438a8ef/Untitled.png)
+![alt text](doubleaddsub.png)
 
 ### 浮点数乘法
 
@@ -413,13 +411,13 @@ $$
 5. 舍入
 6. 判断符号位
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a87c682-f52c-483a-ac38-f64b1c17f228/Untitled.png)
+![alt text](doublemul.png)
 
 ### RISC-V 中的浮点指令
 
 $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operatorname{f_0},\operatorname{f_1},...,\operatorname{f_{31}}$，浮点操作数和浮点汇编语言的图表如下所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1656c8ea-cf34-4a77-9c88-be4fdb3f061e/Untitled.png)
+![alt text](doubleasm.png)
 
 # 第四章 处理器
 
@@ -459,7 +457,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 下图为寄存器堆图示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/372e9d0f-8b5f-41cd-89c3-84e08a79ed54/Untitled.png)
+![alt text](regheap.png)
 
 ### 算术逻辑单元
 
@@ -467,11 +465,11 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 下图为完整的 $64$ 位 $\operatorname{ALU}$ 的原理图：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb598e29-beab-4733-bbb4-12cea5eac7dc/Untitled.png)
+![alt text](aludetail.png)
 
 一般在数据通路中，$\operatorname{ALU}$ 的符号表示为下图：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9604b07-b886-467b-b18d-66b391acc679/Untitled.png)
+![alt text](alunaive.png)
 
 - $\operatorname{Result}$：运算器单元得到的结果
 - $\operatorname{Zero}$：比较 $a$ 和 $b$ 是否相等
@@ -486,13 +484,13 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 三条 $\operatorname{ALU}$ 控制线共同影响 $\operatorname{ALU}$ 操作，下图为三条控制线不同取值所对应的 $\operatorname{ALU}$ 功能。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5565f9cb-959b-4233-98ca-1241169a5129/Untitled.png)
+![alt text](alucontrolline.png)
 
 ### 数据存储单元
 
 数据存储单元是一个**状态单元**，它有**地址输入**和**写数据输入**，以及**读取结果的单个输出**。**读、写信号相互独立**，但**仅有一个可以在任意给定的时钟上有效**。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11c2315e-7b4e-4322-a8b1-dff9a353f13d/Untitled.png)
+![alt text](dm.png)
 
 ### 立即数生成单元
 
@@ -500,11 +498,11 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 立即数生成单元有一个 $**32$ 位指令的输入**，如果是**载入**、**存储**和**分支条件成立时的分支指令**，它**将指令中的一个 $12$ 位字段符号扩展为 $64$ 位结果输出**。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e354b66-5246-4dd6-b981-59ce9c4e7fdf/Untitled.png)
+![alt text](immgen.png)
 
 对于 `beq` 等分支指令，指令体系结构说明了计算分支目标地址时，**将偏移量左移 $1$ 位**，如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/49fe691a-01d1-437b-a932-68075acf74fd/Untitled.png)
+![alt text](beqadd.png)
 
 ### 建立一个简单的数据通路
 
@@ -516,7 +514,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 对于**不同的指令类型**，$\operatorname{ALU}$ 需要执行**不同的功能**，这个**通过一个 $4$ 位的 $\operatorname{ALU}$ 输入控制信号进行控制**，控制信号可由一个小型控制单元产生，输入为指令的 $\operatorname{funct7}$ 和 $\operatorname{funct3}$ 字段以及 $2$ 位的 $\operatorname{ALUOp}$ 字段，下图说明了如果根据以上的输入来设置输入控制信号，其中 $**\operatorname{ALUOp}$ 由主控制单元来生成**。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/036046e4-56a4-4c1a-a0e7-da186dabfe96/Untitled.png)
+![alt text](alucontrol.png)
 
 上图的第一列是指令，它决定了 $\operatorname{ALUOp}$ 位。根据观察可以发现，**当 $\operatorname{ALUOp}$ 为 $00_2$ 或 $01_2$ 时，$\operatorname{ALU}$ 操作并不依赖于 $\operatorname{funct7}$ 和 $\operatorname{funct3}$ 字段**，而**当 $\operatorname{ALUOp}$ 为 $10_2$ 时，根据 $\operatorname{funct7}$ 和 $\operatorname{funct3}$ 字段来设置 $\operatorname{ALU}$ 的输入控制信号**。
 
@@ -530,15 +528,15 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 下图为常用的四种类型的指令的指令格式：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d0768bea-8ee0-49d1-aa53-fe9134a7e2de/Untitled.png)
+![alt text](fourtypeformat.png)
 
 下图给出了 $6$ 根 $1$ 位控制线和 $2$ 位 $\operatorname{ALUOp}$ 控制信号的具体含义：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3bf484c2-cdec-4275-8e4d-b8459b1e2984/Untitled.png)
+![alt text](ALUOp.png)
 
 下图为带有控制单元的简单数据通路：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd706e52-1de1-4a2c-aa49-a06c7404cb77/Untitled.png)
+![alt text](easydatapath.png)
 
 控制单元的输入是指令的 $7$ 位操作码字段，输出包含**两个控制多路选择器的 $1$ 位信号（$\operatorname{ALUSrc}$ 和 $\operatorname{MemtoReg}$）**、**三个控制寄存器堆和数据存储器读写的信号（$\operatorname{RegWrite}$、$\operatorname{MemRead}$ 和 $\operatorname{MemWrite}$）**、**一个确定是否分支的 $1$ 位信号（$\operatorname{Branch}$）**和**一个 $\operatorname{ALU}$ 的 $2$ 位控制信号（$\operatorname{ALUOp}$）**，其中**分支控制信号与 $\operatorname{ALU}$ 的零输出信号一起送入一个与门，其输出 $\operatorname{PCSrc}$ 控制下一个 $\operatorname{PC}$ 的选择**，由于是衍生信号，所以在图中没有标出。
 
