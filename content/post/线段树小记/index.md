@@ -2,6 +2,10 @@
 title: 线段树小记
 summary: 有关线段树的一些个人理解，以及线段树在算法竞赛中的一些常见套路和应用
 date: 2022-07-04
+tags:
+  - ACM
+  - Data Structres
+  - Algorithm
 ---
 
 ## 写在前面

@@ -2,6 +2,9 @@
 title: 计算机组成原理小记
 summary: 计算机组成原理复习资料
 date: 2023-06-01
+tags:
+  - Computer Architecture
+  - CS408
 ---
 # 第一章 计算机抽象及相关技术
 
