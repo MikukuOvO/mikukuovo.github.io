@@ -1,5 +1,5 @@
 ---
-title: 计算机组成原理小记
+title: 计算机组成原理
 summary: CS408 课程计算机组成原理的内容梳理，以 RISC-V 作为基础架构
 date: 2023-06-01
 tags:
@@ -512,7 +512,7 @@ $\operatorname{RISC-V}$ 中添加了独立的浮点寄存器，称为 $\operator
 
 ### ALU 控制
 
-对于**不同的指令类型**，$\operatorname{ALU}$ 需要执行**不同的功能**，这个**通过一个 $4$ 位的 $\operatorname{ALU}$ 输入控制信号进行控制**，控制信号可由一个小型控制单元产生，输入为指令的 $\operatorname{funct7}$ 和 $\operatorname{funct3}$ 字段以及 $2$ 位的 $\operatorname{ALUOp}$ 字段，下图说明了如果根据以上的输入来设置输入控制信号，其中 $**\operatorname{ALUOp}$ 由主控制单元来生成**。
+对于**不同的指令类型**，$\operatorname{ALU}$ 需要执行**不同的功能**，这个**通过一个 $4$ 位的 $\operatorname{ALU}$ 输入控制信号进行控制**，控制信号可由一个小型控制单元产生，输入为指令的 $\operatorname{funct7}$ 和 $\operatorname{funct3}$ 字段以及 $2$ 位的 $\operatorname{ALUOp}$ 字段，下图说明了如果根据以上的输入来设置输入控制信号，其中 **$\operatorname{ALUOp}$ 由主控制单元来生成**。
 
 ![alt text](alucontrol.png)
 
@@ -739,7 +739,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
 
 - $\operatorname{EX}$ 冒险（上图中第一条指令与第二条指令产生的数据冒险）：
     
-    判断方法：通过判断 $**\operatorname{ID/EX}$ 流水线寄存器中的源寄存器号**和 $**\operatorname{EX/MEM}$ 流水线寄存器中的目的寄存器号**是否相等，注意还要判断不为 $0$ 号寄存器并且指令需要写回寄存器，即：
+    判断方法：通过判断 **$\operatorname{ID/EX}$ 流水线寄存器中的源寄存器号**和 **$\operatorname{EX/MEM}$ 流水线寄存器中的目的寄存器号**是否相等，注意还要判断不为 $0$ 号寄存器并且指令需要写回寄存器，即：
     
     ![alt text](exdatahzcode.png)
     
@@ -747,7 +747,7 @@ $\operatorname{RISC-V}$ 指令执行通常包含五个步骤：
     
 - $\operatorname{MEM}$ 冒险（上图中第一条指令与第三条指令产生的数据冒险）：
     
-    判断方法：通过判断 $\operatorname{ID/EX}$ **流水线寄存器中的源寄存器号**和 $**\operatorname{MEM/WB}$ 流水线寄存器中的目的寄存器号**是否相等，剩余条件与 $\operatorname{EX}$ 冒险相同，即：
+    判断方法：通过判断 $\operatorname{ID/EX}$ **流水线寄存器中的源寄存器号**和 **$\operatorname{MEM/WB}$ 流水线寄存器中的目的寄存器号**是否相等，剩余条件与 $\operatorname{EX}$ 冒险相同，即：
     
     ![alt text](memdatahz.png)
     
@@ -865,9 +865,9 @@ add x1, x1, x4
 1. 首先检测例外。
 2. 保存相关的信息：
     
-    **例外指令的地址（处理完例外后的返回地址）**保存在 **$\operatorname{SEPC}$ 寄存器（系统例外程序计数器）**中。
+    **例外指令的地址**（处理完例外后的返回地址）保存在 **$\operatorname{SEPC}$ 寄存器（系统例外程序计数器）中**。
     
-    **例外发生的原因**保存在 **$\operatorname{SCAUSE}$ 寄存器（系统例外原因寄存器）**中。
+    **例外发生的原因** 保存在 **$\operatorname{SCAUSE}$ 寄存器（系统例外原因寄存器）中**。
     
 3. 将处理器控制权转交给操作系统，操作系统进行例外的处理。
 4. 返回。
@@ -1023,7 +1023,7 @@ $\operatorname{cache}$ 失效：由于所需数据不在 $\operatorname{cache}$ 
 
 $\operatorname{cache}$ 的失效处理与两部分协同工作：一部分是**处理器的控制单元**，另一部分是**单独的控制器**，**用来初始化内存访问和重填 $\operatorname{cache}$**。
 
-$**\operatorname{cache}$ 的失效处理会引发流水线的停顿**，这与例外或者中断处理不同，**例外和中断处理需要保存所有寄存器的状态**，而 **$\operatorname{cache}$ 失效将会停顿整个处理器来等待内存返回数据**，特别是**冻结临时寄存器和程序员可见的寄存器的内容**。
+**$\operatorname{cache}$ 的失效处理会引发流水线的停顿**，这与例外或者中断处理不同，**例外和中断处理需要保存所有寄存器的状态**，而 **$\operatorname{cache}$ 失效将会停顿整个处理器来等待内存返回数据**，特别是**冻结临时寄存器和程序员可见的寄存器的内容**。
 
 乱序执行的处理器在等待 $\operatorname{cache}$ 失效处理时允许继续执行指令，不过本节的按序处理器都假设在 $\operatorname{cache}$ 失效时停顿流水线。
 
@@ -1112,7 +1112,7 @@ $$
 
 ### 选择替换的数据块
 
-最近最少使用：一种替换策略，该策略中，**最长时间未被使用的数据块将被替换，**最近最少使用替换策略也叫 $\operatorname{LRU}$。
+最近最少使用：一种替换策略，该策略中，**最长时间未被使用的数据块将被替换**，最近最少使用替换策略也叫 $\operatorname{LRU}$。
 
 **提高相联度需要更多的比较器**，每一个 $\operatorname{cache}$ 块**对应的标签位**也越多。
 
@@ -1130,7 +1130,7 @@ $$
 
 错误检测编码：计算汉明距离（两个等长二进制数对应位置不同的位的数量），这种编码方式能够检测出数据中有 $1$ 位错误，但是不能对错误位置进行精确定位，因此不能纠正错误。
 
-**汉明纠错码（$\operatorname{ECC}$）**的步骤：
+**汉明纠错码**（$\operatorname{ECC}$）的步骤：
 
 例如 $10011010_2$，我们按照如下过程，这里按照从左到右为从低位到高位的顺序：
 
@@ -1140,16 +1140,14 @@ $$
 
 其中不是 $\operatorname{p}$ 的位置是数据位，剩下的是校验位。
 
-$$
-\begin{align*} & \operatorname{P}_1=\operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}_{11} \\ &\operatorname{P}_2=\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \\ &\operatorname{P}_3=\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{12} \\ & \operatorname{P}_4=\operatorname{H}_9 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \oplus \operatorname{H}_{12} \end{align*}
-$$
+$$\begin{align*} & \operatorname{P}_1=\operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}^{11} \newline &\operatorname{P}_2=\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \newline &\operatorname{P}_3=\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{12} \newline & \operatorname{P}_4=\operatorname{H}_9 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \oplus \operatorname{H}^{12} \end{align*}$$
 
-其中 **$\operatorname{P}_1$ 包含二进制最低位为 $1$ 的位置**，$**\operatorname{P}_2$ 包含二进制次低位为 $1$ 的位置**，以此类推，其中 **$\operatorname{P}_5$ 为所有的数据位异或起来**。
+其中 **$\operatorname{P}_1$ 包含二进制最低位为 $1$ 的位置**，**$\operatorname{P}_2$ 包含二进制次低位为 $1$ 的位置**，以此类推，其中 **$\operatorname{P}_5$ 为所有的数据位异或起来**。
 
 如果这时候我们得到一个需要校验的码，我们同样的将这个码按照上述形式写入到表中，然后用我们刚刚得到的校验位 $\operatorname{P}$ 和目前的 $\operatorname{H}$ 来进行校验，具体如下：
 
 $$
-\begin{align*} & \operatorname{S}_1=\operatorname{P}_1\oplus \operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}_{11} \\ &\operatorname{S}_2=\operatorname{P}_2 \oplus\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \\ &\operatorname{S}_3=\operatorname{P}_3 \oplus\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{12} \\ & \operatorname{S}_4=\operatorname{P}_4 \oplus\operatorname{H}_9 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \oplus \operatorname{H}_{12} \end{align*}
+\begin{align*} & \operatorname{S}_1=\operatorname{P}_1\oplus \operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}^{11} \newline &\operatorname{S}_2=\operatorname{P}_2 \oplus\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \newline &\operatorname{S}_3=\operatorname{P}_3 \oplus\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{12} \newline & \operatorname{S}_4=\operatorname{P}_4 \oplus\operatorname{H}_9 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \oplus \operatorname{H}^{12} \end{align*}
 $$
 
 其中 **$\operatorname{S}_5$ 也是 $\operatorname{P}_5$ 异或上所有的数据位**。

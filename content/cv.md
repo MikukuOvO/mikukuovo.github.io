@@ -1,5 +1,5 @@
 ---
-title: Uses
+title: CV
 date: 2023-10-24
 pager: false
 ---
@@ -9,3 +9,4 @@ pager: false
 - [Visual Studio Code](https://code.visualstudio.com/) is my current editor
 - Chrome is my main browser
 - MacOS is my Operating Systemss
+
