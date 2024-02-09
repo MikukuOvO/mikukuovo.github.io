@@ -90,7 +90,7 @@ work:
     date_end: ''
     summary: |2-
       Supervisor:
-      Senior Engineer **Jinyao Xie**
+      Senior Engineer **Jinyao XIE**
 
       Responsibilities include:
       - Develop methods to identifying different types of network source nodes with the given graph
@@ -104,7 +104,7 @@ work:
     date_end: 2024-01-31
     summary: |2-
       Supervisor:
-      Prof. **Jingjue Jiang**
+      Prof. **Jingjue JIANG**
 
       Responsibilities include:
       - Guiding the students in course study
