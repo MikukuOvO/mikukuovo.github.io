@@ -21,10 +21,10 @@ sections:
           url: https://github.com/MikukuOvO/PytorchGAT
         - title: RISC-V five-stage pipeline CPU design
           description: Using Verilog to simulate a CPU with interactive and graphics on FPGA board
-          image: riscv.png
+          image: risc-v.png
           url: https://github.com/MikukuOvO/PipelineCPU
         - title: WHU-OPCP-Platfrom
           description: An OPCP platfrom built with Vue + Django, with CGROUP & docker used for the judger, which gives an stable & interactive environment
-          image: pytorch.png
+          image: WHU-OPCP.png
           url: https://github.com/hz826/WHU-OPCP
 ---
