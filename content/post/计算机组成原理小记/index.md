@@ -945,7 +945,7 @@ $\operatorname{RISC-V}$ 中使用统一入口的方式实现例外处理，设�
     平均旋转延时的计算方式，假设磁盘的转速为 $5400$ 转/分钟：
     
     $$
-    \begin{align*} 平均旋转延时 &= \frac{0.5转}{5400（转/分钟）} \\& = \frac{0.5转}{5400（转/分钟）/60（秒/分钟）} \\ &=0.0056秒 \\ &=5.6毫秒 \end{align*}
+    \begin{align*} 平均旋转延时 &= \frac{0.5转}{5400（转/分钟）} \newline& = \frac{0.5转}{5400（转/分钟）/60（秒/分钟）} \newline &=0.0056秒 \newline &=5.6毫秒 \end{align*}
     $$
     
 - 传输时间：即传输数据块的时间，通过**访问的数据的总大小**和**传输速率**可以计算出来。
@@ -1140,15 +1140,19 @@ $$
 
 其中不是 $\operatorname{p}$ 的位置是数据位，剩下的是校验位。
 
-$$\begin{align*} & \operatorname{P}_1=\operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}^{11} \newline &\operatorname{P}_2=\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \newline &\operatorname{P}_3=\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{12} \newline & \operatorname{P}_4=\operatorname{H}_9 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \oplus \operatorname{H}^{12} \end{align*}$$
+{{< math >}}
+$$\begin{align*} & \operatorname{P}_1=\operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}_{11} \newline &\operatorname{P}_2=\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \newline &\operatorname{P}_3=\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{12} \newline & \operatorname{P}_4=\operatorname{H}_9 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \oplus \operatorname{H}_{12} \end{align*}$$
+{{< /math >}}
 
 其中 **$\operatorname{P}_1$ 包含二进制最低位为 $1$ 的位置**，**$\operatorname{P}_2$ 包含二进制次低位为 $1$ 的位置**，以此类推，其中 **$\operatorname{P}_5$ 为所有的数据位异或起来**。
 
 如果这时候我们得到一个需要校验的码，我们同样的将这个码按照上述形式写入到表中，然后用我们刚刚得到的校验位 $\operatorname{P}$ 和目前的 $\operatorname{H}$ 来进行校验，具体如下：
 
+{{< math >}}
 $$
-\begin{align*} & \operatorname{S}_1=\operatorname{P}_1\oplus \operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}^{11} \newline &\operatorname{S}_2=\operatorname{P}_2 \oplus\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \newline &\operatorname{S}_3=\operatorname{P}_3 \oplus\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}^{12} \newline & \operatorname{S}_4=\operatorname{P}_4 \oplus\operatorname{H}_9 \oplus \operatorname{H}^{10} \oplus \operatorname{H}^{11} \oplus \operatorname{H}^{12} \end{align*}
+\begin{align*} & \operatorname{S}_1=\operatorname{P}_1\oplus \operatorname{H}_3 \oplus \operatorname{H}_5 \oplus \operatorname{H}_7 \oplus \operatorname{H}_9 \oplus \operatorname{H}_{11} \newline &\operatorname{S}_2=\operatorname{P}_2 \oplus\operatorname{H}_3 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \newline &\operatorname{S}_3=\operatorname{P}_3 \oplus\operatorname{H}_5 \oplus \operatorname{H}_6 \oplus \operatorname{H}_7 \oplus \operatorname{H}_{12} \newline & \operatorname{S}_4=\operatorname{P}_4 \oplus\operatorname{H}_9 \oplus \operatorname{H}_{10} \oplus \operatorname{H}_{11} \oplus \operatorname{H}_{12} \end{align*}
 $$
+{{< /math >}}
 
 其中 **$\operatorname{S}_5$ 也是 $\operatorname{P}_5$ 异或上所有的数据位**。
 

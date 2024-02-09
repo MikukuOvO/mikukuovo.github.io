@@ -77,17 +77,14 @@ The following is a corresponding circuit.
 The following is an outline of the HHL algorithm
 
 1. Load the data $|b\rangle\in\mathbb{ C }^{N}$. That is, perform the transformation
-    
-    
-    $$
-    |0\rangle _{n_{b}} \mapsto |b\rangle _{n_{b}}
-    $$
+
+$$|0\rangle _{n_b} \mapsto |b\rangle _{n_b}$$
     
 2. Apply Quantum Phase Estimation (QPE) with
 
-$$
-U = e ^ { i A t } := \sum _{j=0}^{N-1}e ^ { i \lambda _ { j } t } |u_{j}\rangle\langle u_{j}|
-$$
+{{< math >}}
+$$ U = e ^ { i A t } := \sum _{j=0}^{N-1}e ^ { i \lambda _ { j } t } |u_{j}\rangle\langle u_{j}| $$
+{{< /math >}}
 
 The quantum state of the register expressed in the eigen basis of $A$ is now
 
@@ -113,9 +110,11 @@ $$
 
 1. Measure the auxiliary qubit in the computational basis. If the outcome is $1$, the register is in the post-measurement state.
 
+{{< math >}}
 $$
 \left( \sqrt { \frac { 1 } { \sum_{j=0}^{N-1} \left| b _ { j } \right| ^ { 2 } / \left| \lambda _ { j } \right| ^ { 2 } } } \right) \sum _{j=0}^{N-1} \frac{b _ { j }}{\lambda _ { j }} |0\rangle_{n_{l}}|u_{j}\rangle_{n_{b}}
 $$
+{{< /math >}}
 
 which up to a normalization factor corresponds to the solution.
 

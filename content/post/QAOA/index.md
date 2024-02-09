@@ -100,8 +100,11 @@ The U-gate with parameters $(\frac{\pi}{2},0,\pi)$ is equal to the Hadamard Gate
 
 ## Find the optimal parameters
 
-The goal of the QAOA algorithm is to minimize the expectation value of $\langle \psi(\boldsymbol{\beta}_{opt}, \boldsymbol{\gamma}_{opt}) \rvert H_P \lvert 
-\psi(\boldsymbol{\beta}_{opt}, \boldsymbol{\gamma}_{opt}) \rangle$.  Such an expectation can be obtained by doing measurement in the Z-basis. And we use a classical optimization algorithm to find the optimal parameters.
+The goal of the QAOA algorithm is to minimize the expectation value of 
+{{< math >}}
+$$\langle \psi(\boldsymbol{\beta}_{opt}, \boldsymbol{\gamma}_{opt}) \rvert H_P \lvert \psi(\boldsymbol{\beta}_{opt}, \boldsymbol{\gamma}_{opt}) \rangle$$ 
+Such an expectation can be obtained by doing measurement in the Z-basis. And we use a classical optimization algorithm to find the optimal parameters.
+{{< /math >}}
 
 The steps can be present as follows:
 
