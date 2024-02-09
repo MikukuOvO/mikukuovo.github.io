@@ -3,8 +3,7 @@ title: ✅ Manage your projects
 summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
 date: 1970-01-01
 tags:
-  - Wowchemy
-  - Markdown
+  - Template
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
