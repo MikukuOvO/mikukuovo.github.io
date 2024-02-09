@@ -154,27 +154,35 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: International Collegiate Programming Contest (ACM-ICPC) Asia Xi'an Regional Contest
-    url: https://icpc.global/
+    url: 2023ICPCXIAN.pdf
     date: '2022-11-12'
     awarder: William B. Poucher, Ph. D., ICPC Executive Director
     icon: icpc
     summary: |
       **Silver Medal**
   - title: International Collegiate Programming Contest (ACM-ICPC) Asia Hangzhou Regional Contest
-    url: https://icpc.global/
+    url: 2023ICPCHANGZHOU.pdf
     date: '2022-12-03'
     awarder: William B. Poucher, Ph. D., ICPC Executive Director
     icon: icpc
     summary: |
       **Silver Medal**
   - title: The second China Computer Federation (CCF) 'Sinan Cup' Quantum Computing Programming Challenge University group
-    url: https://www.ccf.org.cn/Media_list/TC/2023-08-14/810483.shtml
+    url: 2023QuantumComputing.pdf
     # certificate_url: https://www.datacamp.com
     date: '2023-01-21'
     awarder: China Computer Federation(CCF)
     icon: ccf
     summary: |
       **First Prize** 
+  - title: China University Computer Competition - Team programming ladder Competition
+    url: 2023CCCC.pdf
+    # certificate_url: https://www.datacamp.com
+    date: '2023-05-05'
+    awarder: Computer Education Research Association of Chinese Universities
+    icon: cccc
+    summary: |
+      **Individual Third prize** 
 ---
 
 ## I am currently an Undergraduate student in Wuhan University
