@@ -19,6 +19,10 @@ sections:
           description: A pytorch implementation of the GAT model based on the officail code, adding code for plots & using mps for accelerate running on MacOS
           image: pytorch.png
           url: https://github.com/MikukuOvO/PytorchGAT
+        - title: BSACO
+          description: Improvement of ant colony algorithm based on block and search -- Traveling salesman problem
+          image: cpp.png
+          url: https://github.com/MikukuOvO/BSACO
         - title: RISC-V five-stage pipeline CPU design
           description: Using Verilog to simulate a CPU with interactive and graphics on FPGA board
           image: risc-v.png
