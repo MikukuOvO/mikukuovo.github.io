@@ -768,25 +768,25 @@ add x1, x1, x4
 
 下图为各个多选器的控制值：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62331f94-78c6-48d7-b9f4-2cd24fe52ff8/Untitled.png)
+![alt text](multicon.png)
 
 最后我们将前递单元加入到我们之前的流水线数据通路中，$\operatorname{ALU}$ 左上的多选器对应的是 $\operatorname{ForwardA}$，左下对应的是 $\operatorname{ForwardB}$：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/996a01d4-1cf4-4a88-a885-9f385b324494/Untitled.png)
+![alt text](addforpth.png)
 
 而正如我们之前提到的那样，有一类叫**载入-使用型**的数据冒险并不能通过上述的前推的方法来解决，针对于这样的一类冒险，我们只能通过阻塞流水线（加入空指令）的方法来解决，如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9d34523-e08a-4893-b572-e69a9e1a5f1c/Untitled.png)
+![alt text](ldusehz.png)
 
 空指令：一种不执行任何操作、不改变任何状态的指令。
 
 我们这里直接给出检测这样一类冒险的判断方法：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/525b7095-3477-4c4a-b177-a94d7c3b8b7a/Untitled.png)
+![alt text](judgeldusehz.png)
 
 检测的这样一类冒险的时候，我们只要加入一个冒险检测单元，如果检测到就将 $\operatorname{ID/EX}$ 流水线寄存器的值清空，并重置 $\operatorname{PCWrite}$ 和 $\operatorname{IF/IDWrite}$ 即可，如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24477849-aadf-458c-9f83-2f58b52c4079/Untitled.png)
+![alt text](detectpth.png)
 
 ## 控制冒险
 
@@ -822,11 +822,11 @@ add x1, x1, x4
 
 不发生跳转：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5cf75b58-566f-42bd-aaec-2e08b39fe57c/Untitled.png)
+![alt text](nojmp.png)
 
 发生跳转：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a84debc-19ea-4542-88aa-5ccad351d233/Untitled.png)
+![alt text](jmp.png)
 
 ### 动态分支预测
 
@@ -837,7 +837,7 @@ add x1, x1, x4
 - 一位预测：对于预测的指令，如果预测发生了错误就将预测位置为相反值。
 - 二位预测：如下图所示
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c13b91ad-70ac-4861-9c35-4111d7b5030c/Untitled.png)
+    ![alt text](brpred.png)
     
     关于下图的实现，我们可以考虑将 $2$ 位预测位编码到四个状态上，该预测器在**分支跳转时加 $1$**，在**分支不跳转时减 $1$**，并且**使用表示范围的中位数作为预测分值跳转与不跳转之间的分界点**。
     
@@ -852,13 +852,13 @@ add x1, x1, x4
 
 下图为本章最终的数据通路和控制图：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2bdc74da-8d36-4de6-b9e3-eb774a6c0a02/Untitled.png)
+![alt text](summary.png)
 
 ## 例外
 
 下图为不同例外来源的事件在 $\operatorname{RISC-V}$ 中的表示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c00ac87c-42a7-47ed-8144-0ad9b0023fde/Untitled.png)
+![alt text](except.png)
 
 ### RISC-V 体系结构中如何处理例外
 
@@ -893,7 +893,7 @@ $\operatorname{RISC-V}$ 中使用统一入口的方式实现例外处理，设�
 
 例外处理的数据通路和控制信号如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ecf0491-85c2-460f-a597-fc3a3fa7491e/Untitled.png)
+![alt text](exceptsig.png)
 
 # 第五章 存储器
 
@@ -905,7 +905,7 @@ $\operatorname{RISC-V}$ 中使用统一入口的方式实现例外处理，设�
 
 存储层次结构：多级存储采用的结构，即与处理器的距离越远，存储的容量越大，但访问速度越慢。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1eea3d9b-d835-4c86-9d0f-e5f635cc873d/Untitled.png)
+![alt text](storehic.png)
 
 层次化存储可以由不同的层次组成，但是**数据只能在相邻两个层次之间进行复制**。
 
@@ -925,7 +925,7 @@ $\operatorname{RISC-V}$ 中使用统一入口的方式实现例外处理，设�
 
 ## 存储技术
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fc500c0-c43b-4dca-aed5-cdabae8da670/Untitled.png)
+![alt text](storecost.png)
 
 ### 磁盘
 
@@ -966,7 +966,7 @@ $$
 
 如果 $\operatorname{cache}$ 的块数是 $2$ 的幂，则取模运算很简单，只需要取地址的最低若干位即可，例如下图一个 $8$ 个字的直接映射 $\operatorname{cache}$：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/331c8547-bc63-42d0-b4d8-6606cfda885c/Untitled.png)
+![alt text](directcache.png)
 
 地址 $\operatorname{X}$ 对应的 $\operatorname{cache}$ 的位置为 $\operatorname{X~mod~8}$，也就是说，低 $3$ 位都被用来作为 $\operatorname{index}$。
 
@@ -982,11 +982,11 @@ $$
 
 上面例举的 $\operatorname{cache}$ 的图示如下所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9052db42-1554-4fa3-b5ac-43d59f3154f3/Untitled.png)
+![alt text](easycache.png)
 
 上述的 $\operatorname{cache}$ 是一种特殊情况，对于一般的 $\operatorname{cache}$，我们对于一个索引的数据块可能存放着若干个字，这时我们就需要一个块偏移（$\operatorname{Block~Offset}$）来在块内进行寻址，如下图所示：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/167a7f78-7598-4598-8e7f-1fac9314d108/Untitled.png)
+![alt text](realcache.png)
 
 上图为一个 $32$ 位地址的处理器，$\operatorname{cache}$ 包含 $256$ 个索引地址，每个索引位置的数据块包含 $16$ 个字，其中 $4$ 位（$2\sim 5$ 位）用来在数据块中选择所需的字，则 $\operatorname{tag}$ 字段为 $32-8-4-2=18$ 位。
 
@@ -1098,7 +1098,7 @@ $$
 
 对于三种不同的组织结构，下图举例给出数据块 $12$ 在 $\operatorname{cache}$ 中的位置：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7fb20b6e-34b2-4a12-8479-56979090674e/Untitled.png)
+![alt text](threewaycache.png)
 
 在组相联 $\operatorname{cache}$ 中，包含主存块的组号位
 
@@ -1168,7 +1168,7 @@ $$
 
 比如，虚拟内存还能解决内存不够用的情况，物理内存不够时，开辟一块磁盘空间作为额外的“内存”强行使用。如图：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48cd4dc1-b0c8-41c1-abf8-78989737e41d/Untitled.png)
+![alt text](diskaddtrans.png)
 
 ### 页表
 
@@ -1176,11 +1176,11 @@ $$
 
 页表使用虚拟地址的页号作为索引，以找到实际物理储存器中的页号。每个程序都有一张自己的页表。索引的过程如下图：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5412b021-6d26-4253-aef0-f5bfa70b6c44/Untitled.png)
+![alt text](pttrans.png)
 
 页大小为 $2^{12}=4\operatorname{KiB}$，由于物理页号有 $28$ 位，内存中物理页数为 $2^{28}$，因此主存的最大容量为 $1\operatorname{TiB}$，而虚拟地址空间为 $256\operatorname{TiB}$。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c8f43f09-7a2e-4eb7-ab3e-51a274db2688/Untitled.png)
+![alt text](fulltrans.png)
 
 **全相联放置**、采用**写回策略**。
 
@@ -1190,7 +1190,7 @@ $$
 
 页表中会有一个标志位（有效位），当其为1时表示当前页在内存中。为 $0$ 则表示当前页在磁盘中。当标志位为 $0$ 时，无法直接向内存取数据，而是要访问磁盘。这个行为称为**缺页**。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ec130f9b-7b1e-49ce-8e40-d56fa1f43f77/Untitled.png)
+![alt text](lackpage.png)
 
 要完全准确地执行 $\operatorname{LRU}$ 算法的代价太高，为了帮操作系统估算最近最少使用的页，$\operatorname{RISC-V}$ 计算机提供了一个引用位，当一页被访问时该位被置位。操作系统定期将引用位清零，然后再重新记录。
 
@@ -1210,19 +1210,19 @@ $$
 
 如果有效位是 $1$ 那么直接读取（下图绿色标记）：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8b0bf0bf-3d61-43b3-913e-7a29fd055954/Untitled.png)
+![alt text](replace1.png)
 
 如果有效位为 $0$，那么发生缺页（下图红色标记）。首先从磁盘中读取数据到内存（下图绿色标记）这个读会覆盖一页的数据。假设初始情况如下 ：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c15334c9-473e-4433-8de1-8bde95b524a4/Untitled.png)
+![alt text](replace2.png)
 
 覆盖（替换）之后，数据 $\operatorname{L}$ 被读入内存中的某一页（$2$ 号页）：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ceaafd1f-b814-41aa-bff7-8d5cfc4b2f71/Untitled.png)
+![alt text](replace3.png)
 
 然后 **重写** 页表的标志位和页号，因为此时 $\operatorname{L}$ 数据已经在内存了（下图绿色标记）那么下一次根据页表去内存就可以直接找到数据了：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2768cac5-2ccf-4562-8998-64dd244d7fac/Untitled.png)
+![alt text](replace4.png)
 
 这个替换遵守最近最少使用原则 （LRU，least recently use），即替换掉最近最不常用的页。
 
@@ -1232,7 +1232,7 @@ $$
 
 现代 $\operatorname{CPU}$ 都包含一张名为 $\operatorname{TLB}$（Transfer Look-aside Table），叫做**快表**，或者高速地址变址缓存，以加速对于页表的访问。加入 $\operatorname{TLB}$ 之后的完整地址映射长这样：
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b1bd7dd-d1c8-4bb5-8973-a28bce9019ca/Untitled.png)
+![alt text](tlb.png)
 
 那么对于一次存取 ，就会有分 $3$ 级的情况：
 
@@ -1242,9 +1242,9 @@ $$
 
 $\operatorname{TLB}$ 和 $\operatorname{cache}$ 实现从虚拟地址到数据项的转换过程。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74682491-c5c0-4134-8f4b-c5c9d6f03c45/Untitled.png)
+![alt text](full1.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b851a552-fda8-46f7-9ef1-06e70be6d548/Untitled.png)
+![alt text](full2.png)
 
 | TLB | 页表 | cache | 可能与否的描述 |
 | --- | --- | --- | --- |
