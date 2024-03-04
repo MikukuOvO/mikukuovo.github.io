@@ -86,8 +86,8 @@ work:
     company_name: Huawei Wuhan Research Institute
     company_url: ''
     company_logo: ''
-    date_start: 2024-01-01
-    date_end: ''
+    date_start: 2024-01-03
+    date_end: 2024-03-01
     summary: |2-
       Supervisor:
       Senior Engineer **Jinyao XIE**
