@@ -1,13 +1,13 @@
 ---
-title: Intensive reading of thesis - Socially-Aware Self-Supervised Tri-Training for Recommendation
+title: Socially-Aware Self-Supervised Tri-Training for Recommendation
 summary: A three-training Contrastive Learning based on social network assistance
 date: 2024-03-05
 tags:
+  - Intensive Reading of thesis
   - Contrastive Learning
   - Recommender System
+  - Machine Learning with Graphs
 ---
-
-# Socially-Aware Self-Supervised Tri-Training for Recommendation
 
 ## Introduction
 
@@ -84,16 +84,20 @@ $$
 y_{u+}^r=\frac{1}{2}(y_{u^+}^s+y_{u^+}^f)
 $$
 And we get $K$ top positive samples with the highest confidence as pseudo-labels. The process can be formulated as:
+{{< math >}}
 $$
 \mathcal{P_{u+}^r}=\{\tilde{Z}_k|k\in \text{Top-}K(y_{u+}^r),\tilde{Z}\sim \tilde{\mathcal{G}}\}
 $$
+{{< /math >}}
 
 ### Contrastive Learning
 
 Then, we use the $K$ Pseudo-labels we get below for contrastive learning. Specifically, we treat these nodes as positive examples and then treat the rest of the nodes that do not belong to the set as negative examples, using **InfoNCE** to obtain the loss function as follows:
+{{< math >}}
 $$
 \mathcal{L_{ssl}}=-\mathbb{E}\sum_{v\in \{r,s,f\}}\left[\log\frac{\sum_{p\in\mathcal{P}_{u+}^v}\psi(z_u^v,\tilde{z}_p)}{\sum_{p\in\mathcal{P}_{u+}^v}\psi(z_u^v,\tilde{z}_p)+\sum_{j\in U/\mathcal{P}_{u+}^v}\psi(z_u^v,\tilde{z}_j)}\right]
 $$
+{{< /math >}}
 Where $\psi(z_u^v,\tilde{z}_p)=\exp(\phi(z_u^v\cdot \tilde{z}_p)/\tau),\phi(\cdot):\mathbb{R}^d\times \mathbb{R}^d\mapsto \mathbb{R}$ is the discriminator function that takes two vectors as the input and then scores the agreement between them and $\tau$ is the temperature to amplify the effect of discrimination.
 
 Hint: When only one positive example is used and if the user itself in $\tilde Z$ has the highest confidence in $y_{u+}$, the neighbor-discrimination degenerates to the self-discrimination.
@@ -101,9 +105,11 @@ Hint: When only one positive example is used and if the user itself in $\tilde Z
 ### Optimization
 
 The learning of SEPT consists of two tasks: recommendation and the neighbor-discrimination based contrastive learning. Let $\mathcal{L_r}$ be the BPR pairwise loss function which is defined as:
+{{< math >}}
 $$
 \mathcal{L_r}=\sum_{i\in \mathcal{I}(u),j\notin \mathcal{I}(u)}-\log\sigma(\hat{r}_{ui}-\hat{r}_{uj})+\lambda \Vert E\Vert_2^2
 $$
+{{< /math >}}
 Where $\mathcal{I}(u)$ is the item set that user $u$ has interacted with, $\hat{r}_{ui}=P_u^\intercal Q_i$, $P$ and $Q$ are obtained by splitting $Z^r$, and $\lambda$ is the coefficient controlling the $L_2$ regularization.
 
 The training of SEPT proceeds in two stages: initialization and joint learning. To start with, we warm up the framework with the recommendation task by optimizing $\mathcal{L_r}$, and then the overall objective of the joint learning is defined as:
@@ -111,6 +117,6 @@ $$
 \mathcal{L}=\mathcal{L_r}+\beta \mathcal{L_{ssl}}
 $$
 
-## To be inproved
+## To be improved
 
 In this paper, only the self-supervision signals from users are exploited. However, items can also analogously provide informative pseudo-labels for self-supervision.
