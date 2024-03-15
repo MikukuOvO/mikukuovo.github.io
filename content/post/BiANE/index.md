@@ -36,11 +36,11 @@ BiANE simultaneously models the inter-partition proximity and the intra-partitio
 
 #### View
 
-![image-20240314204914428](/Users/yufenglin/Library/Application Support/typora-user-images/image-20240314204914428.png)
+![alt text](image1.png)
 
 First, we generate an **intra interaction diagram** based on the inter interaction view. Specifically, if nodes $u_1$ and $u_2$ in the same side are simultaneously connected to $v$ in another side, then $u_1$ and $u_2$ are connected in the generated intra interaction diagram. In this way, we obtain the **inter interaction view** of $u$ and $v$. Then we put the structure **embeddings and feature embeddings** $\textbf x$ and $\textbf z$ in the graph through the autoencoder respectively to get the **encoded embeedings** $\textbf x'$ and $\textbf z'$ and the **reconstructed embeddings** $\hat{\textbf x}$ and $\hat{\textbf z}$. And we use **encoded embeedings** $\textbf x',\textbf z'$ to get the **latent representations embeedings** $\tilde{\textbf x}, \tilde{\textbf z}$.
 
-![image-20240314210825820](/Users/yufenglin/Library/Application Support/typora-user-images/image-20240314210825820.png)
+![alt text](image2.png)
 
 First we reduce the difference between the **initial embeddings** and the **refactoring embeddings**, doing this separately for $\textbf x,\hat{\textbf x}$ and $\textbf z,\hat{\textbf z}$. We then reduce the difference between the **two encoded embeddings** $\textbf x_m',\textbf x_n'$ if there is an edge between the two points $m,n$. Finally, we reduce the difference of  **two latent representations embeedings**  $\tilde{\textbf x}_m,\tilde{\textbf z}_n$ for $m=n$ or the **dynamic positive sampling distribution** $m,n$. Finally, we concatenate $\textbf x′$ and $\textbf z′$ to obtain the **final embedding** $\textbf h$ and utilize it for the **inter-partition proximity modeling**.
 
