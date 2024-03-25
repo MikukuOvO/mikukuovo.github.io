@@ -31,4 +31,12 @@ sections:
           description: 
           image: hanyouzheng.png
           url: https://zzzhy03.github.io/
+        - title: Zhe Hou
+          description: 
+          image: zhehou.png
+          url: https://hz826.github.io/
+        - title: Yuxuan Yang
+          description: 
+          image: yuxuanyang.png
+          url: https://butterflydew.github.io/
 ---

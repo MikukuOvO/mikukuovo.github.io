@@ -15,6 +15,10 @@ sections:
       text: Here are a selection of projects that I have worked on over the years.
       # Upload project images to your `assets/media/` folder and reference the filename in the `image` option
       items:
+        - title: Singularity Odyssey
+          description: An intelligent planning assistant
+          image: 
+          url: https://github.com/MikukuOvO/Singularity-Odyssey
         - title: Pytorch GAT
           description: A pytorch implementation of the GAT model based on the officail code, adding code for plots & using mps for accelerate running on MacOS
           image: pytorch.png
