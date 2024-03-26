@@ -1,5 +1,5 @@
 ---
-title: QAOA Algorithm
+title: ⚛️ QAOA Algorithm
 summary: A brief introduction to QAOA Algorithm
 date: 2023-04-09
 tags:

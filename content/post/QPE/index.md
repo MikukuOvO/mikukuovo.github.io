@@ -1,5 +1,5 @@
 ---
-title: Quantum Phase Estimation
+title: ⚛️ Quantum Phase Estimation
 summary: A brief introduction to Quantum Phase Estimation
 date: 2023-04-03
 tags:

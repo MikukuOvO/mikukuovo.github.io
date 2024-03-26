@@ -1,5 +1,5 @@
 ---
-title: Bipartite Attributed Network Embedding
+title: ፨ Bipartite Attributed Network Embedding
 summary: A model for bipartite attributed networks not only models the inter-partition proximity but also models the intra-partition proximity.
 date: 2024-03-12
 tags:

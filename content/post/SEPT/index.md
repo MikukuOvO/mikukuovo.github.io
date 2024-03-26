@@ -1,5 +1,5 @@
 ---
-title: Socially-Aware Self-Supervised Tri-Training for Recommendation
+title: ፨ Socially-Aware Self-Supervised Tri-Training for Recommendation
 summary: A three-training Contrastive Learning based on social network assistance
 date: 2024-03-05
 tags:

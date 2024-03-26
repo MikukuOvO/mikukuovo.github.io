@@ -1,5 +1,5 @@
 ---
-title: 关系理论
+title: 📦 关系理论
 summary: 数据库系统关系理论部分的知识梳理，参考书为《Database Systems The Complete Book》
 date: 2023-10-12
 tags:

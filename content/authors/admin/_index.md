@@ -66,22 +66,6 @@ work:
       Scientific research content:
       - Machine Learning with Graphs
       - Generative Models on Graphs   
-  - position: Scientific research on Convolutional Neural Network
-    company_name: Summer Research Program (Shanghai)
-    date_start: 2023-05-01
-    date_end: 2023-08-01
-    summary: |2-
-      Supervisor:
-      Prof. **Pavlos Protopapas**
-
-      Courses included:
-      - Convolutional Neural Network
-      - Autoencoders
-      - Transfer learning and SOTA models
-      - 10 Sessions & 8 Labs
-      
-      Scientific research content:
-      - Object Detection
   - position: Algorithm Intern
     company_name: Huawei Wuhan Research Institute
     company_url: ''
@@ -109,6 +93,22 @@ work:
       Responsibilities include:
       - Guiding the students in course study
       - Guiding the students carrying out experiments of the course
+  - position: Scientific research on Convolutional Neural Network
+    company_name: Summer Research Program (Shanghai)
+    date_start: 2023-05-01
+    date_end: 2023-08-01
+    summary: |2-
+      Supervisor:
+      Prof. **Pavlos Protopapas**
+
+      Courses included:
+      - Convolutional Neural Network
+      - Autoencoders
+      - Transfer learning and SOTA models
+      - 10 Sessions & 8 Labs
+      
+      Scientific research content:
+      - Object Detection
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

@@ -1,5 +1,5 @@
 ---
-title: 计算机组成原理
+title: 💾 计算机组成原理
 summary: CS408 课程计算机组成原理的内容梳理，以 RISC-V 作为基础架构
 date: 2023-06-01
 tags:

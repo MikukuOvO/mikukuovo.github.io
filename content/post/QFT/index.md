@@ -1,5 +1,5 @@
 ---
-title: Quantum Fourier Transform
+title: ⚛️ Quantum Fourier Transform
 summary: A brief introduction to Quantum Fourier Transform
 date: 2023-03-29
 tags:

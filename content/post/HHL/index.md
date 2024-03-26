@@ -1,5 +1,5 @@
 ---
-title: HHL Algorithm
+title: ⚛️ HHL Algorithm
 summary: A brief introduction to HHL Algorithm
 date: 2023-04-27
 tags:
