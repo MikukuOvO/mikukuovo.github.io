@@ -36,33 +36,6 @@ profiles:
     url: https://github.com/MikukuOvO
 
 education:
-  - area: Scientific research on Machine Learning with Graphs
-    institution: Hong Kong University of Science and Technology (Remote)
-    date_start: 2024-01-01
-    date_end: ''
-    summary: |2-
-      Supervisor:
-      Prof. **Jing TANG** & Dr. Yifan SONG
-
-      Scientific research content:
-      - Machine Learning with Graphs
-      - Generative Models on Graphs   
-  - area: Scientific research on Convolutional Neural Network
-    institution: Summer Research Program (Shanghai)
-    date_start: 2023-05-01
-    date_end: 2023-08-01
-    summary: |2-
-      Supervisor:
-      Prof. **Pavlos Protopapas**
-
-      Courses included:
-      - Convolutional Neural Network
-      - Autoencoders
-      - Transfer learning and SOTA models
-      - 10 Sessions & 8 Labs
-      
-      Scientific research content:
-      - Object Detection
   - area: B.E. Computer Science
     institution: Wuhan University
     date_start: 2021-09-01
@@ -82,6 +55,33 @@ education:
       - Machine Learning with Graphs
       - Contrastive Learning on Graphs
 work:
+  - position: Scientific research on Machine Learning with Graphs
+    company_name: Hong Kong University of Science and Technology (Remote)
+    date_start: 2024-01-01
+    date_end: ''
+    summary: |2-
+      Supervisor:
+      Prof. **Jing TANG** & Dr. Yifan SONG
+
+      Scientific research content:
+      - Machine Learning with Graphs
+      - Generative Models on Graphs   
+  - position: Scientific research on Convolutional Neural Network
+    company_name: Summer Research Program (Shanghai)
+    date_start: 2023-05-01
+    date_end: 2023-08-01
+    summary: |2-
+      Supervisor:
+      Prof. **Pavlos Protopapas**
+
+      Courses included:
+      - Convolutional Neural Network
+      - Autoencoders
+      - Transfer learning and SOTA models
+      - 10 Sessions & 8 Labs
+      
+      Scientific research content:
+      - Object Detection
   - position: Algorithm Intern
     company_name: Huawei Wuhan Research Institute
     company_url: ''
