@@ -9,6 +9,19 @@ tags:
 ## Some Userful Websites
 [Tsinghua Mirrors pip](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)\
 [Pytorch Previous Version](https://pytorch.org/get-started/previous-versions/)
+## Running Python in the Background
+### Install screen library
+```shell
+apt-get update
+apt-get install screen
+```
+### Common Instruction set
+```shell
+screen -S test # New Session
+screen -list # Enumerate all Sessions
+screen -r test # Connect to Session: test
+screen -X -S test quit # Kill Session, test can be session name or id
+```
 ## GPU Enable for Pytorch
 ### Check Graphics Driver
 First check if the **Graphics Driver** is installed:
