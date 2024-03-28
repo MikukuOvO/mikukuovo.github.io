@@ -17,7 +17,7 @@ sections:
       items:
         - title: Singularity Odyssey
           description: An intelligent planning assistant
-          image: 
+          image: singularityodyssey.png
           url: https://github.com/MikukuOvO/Singularity-Odyssey
         - title: Pytorch GAT
           description: A pytorch implementation of the GAT model based on the officail code, adding code for plots & using mps for accelerate running on MacOS
