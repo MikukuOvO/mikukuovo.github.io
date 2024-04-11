@@ -9,6 +9,10 @@ tags:
 ## Some Userful Websites
 [Tsinghua Mirrors pip](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)\
 [Pytorch Previous Version](https://pytorch.org/get-started/previous-versions/)
+## Some Userful Instructions
+```shell
+watch -n 1 nvidia-smi
+```
 ## Running Python in the Background
 ### Install screen library
 ```shell
