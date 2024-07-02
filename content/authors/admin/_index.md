@@ -95,30 +95,30 @@ skills:
         description: ''
         percent: 95
         icon: code-bracket
-      - name: Python
-        description: ''
-        percent: 80
-        icon: chart-bar
       - name: Pytorch
         description: ''
+        percent: 90
+        icon: command-line
+      - name: Server
+        description: ''
         percent: 80
-        icon: circle-stack
+        icon: cloud
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
       - name: Sing
         description: ''
-        percent: 90
-        icon: camera
+        percent: 70
+        icon: microphone
       - name: Music
         description: ''
-        percent: 80
-        icon: camera
+        percent: 90
+        icon: musical-note
       - name: Anime
         description: ''
-        percent: 80
-        icon: dogs
+        percent: 90
+        icon: sparkles
 
 languages:
   - name: Chinese
