@@ -19,9 +19,6 @@ sections:
           description: An intelligent planning assistant
           image: singularityodyssey.png
           url: https://github.com/MikukuOvO/Singularity-Odyssey
-        - title: Pytorch GAT
-          description: A pytorch implementation of the GAT model based on the officail code, adding code for plots & using mps for accelerate running on MacOS
-          image: pytorch.png
           url: https://github.com/MikukuOvO/PytorchGAT
         - title: BSACO
           description: Improvement of ant colony algorithm based on block and search -- Traveling salesman problem

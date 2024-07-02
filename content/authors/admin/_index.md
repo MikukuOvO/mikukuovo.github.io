@@ -41,45 +41,41 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |2-
-      GPA: 3.62/4.0
+      GPA: 3.63/4.0 Average Score: 87/100
       
       Courses included:
       - Linear Algebra: 97/100
       - Algorithm design and analysis: 94/100
+      - Machine Learning: 91/100
       - Computer Network: 93/100
 
-      Supervisor:
-      Prof. **Jian WANG** & Dr. DuanTengChuan LI
-
-      Scientific research content:
-      - Machine Learning with Graphs
-      - Contrastive Learning on Graphs
 work:
-  - position: Scientific research on Machine Learning with Graphs
-    company_name: Hong Kong University of Science and Technology (Remote)
-    date_start: 2024-01-01
+  - position: Remote Research Assistant
+    company_name: Hong Kong University of Science and Technology
+    date_start: 2024-03-01
     date_end: ''
     summary: |2-
       Supervisor:
-      Prof. **Jing TANG** & Dr. Yifan SONG
+      Prof. **Jing TANG**
 
       Scientific research content:
-      - Machine Learning with Graphs
-      - Generative Models on Graphs   
-  # - position: Algorithm Intern
-  #   company_name: Huawei Wuhan Research Institute
-  #   company_url: ''
-  #   company_logo: ''
-  #   date_start: 2024-01-03
-  #   date_end: 2024-03-01
-  #   summary: |2-
-  #     Supervisor:
-  #     Senior Engineer **Jinyao XIE**
+      - Graph Neural Networks
+      - Self-Supervised Learning 
 
-  #     Responsibilities include:
-  #     - Develop methods to identifying different types of network source nodes with the given graph
-  #     - Introduce graph machine learning methods combined with traditional graph algorithm to handle the network structre diagram has a large number of access rings
-  #     - Use layout algorithm to visualize the given graph
+  - position: Algorithm Intern
+    company_name: Huawei Wuhan Research Institute
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-01-03
+    date_end: 2024-03-01
+    summary: |2-
+      Supervisor:
+      Senior Engineer **Jinyao XIE**
+
+      Responsibilities include:
+      - Develop methods to identifying different types of network source nodes with the given graph
+      - Introduce graph machine learning methods combined with traditional graph algorithm to handle the network structre diagram has a large number of access rings
+      - Use layout algorithm to visualize the given graph
   - position: Teaching Assistant for the Data Structures course
     company_name: Wuhan University
     company_url: ''
@@ -89,26 +85,6 @@ work:
     summary: |2-
       Supervisor:
       Prof. **Jingjue JIANG**
-
-      Responsibilities include:
-      - Guiding the students in course study
-      - Guiding the students carrying out experiments of the course
-  - position: Scientific research on Convolutional Neural Network
-    company_name: Summer Research Program (Shanghai)
-    date_start: 2023-05-01
-    date_end: 2023-08-01
-    summary: |2-
-      Supervisor:
-      Prof. **Pavlos Protopapas**
-
-      Courses included:
-      - Convolutional Neural Network
-      - Autoencoders
-      - Transfer learning and SOTA models
-      - 10 Sessions & 8 Labs
-      
-      Scientific research content:
-      - Object Detection
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -131,22 +107,24 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Cats
+      - name: Sing
         description: ''
         percent: 90
-        icon: cat
-      - name: Photography
+        icon: camera
+      - name: Music
         description: ''
         percent: 80
         icon: camera
-      - name: Dogs
+      - name: Anime
         description: ''
         percent: 80
         icon: dogs
 
 languages:
-  - name: TOFEL
-    percent: 93
+  - name: Chinese
+    percent: 100
+  - name: English
+    percent: 70
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -174,7 +152,7 @@ awards:
     awarder: China Computer Federation(CCF)
     icon: ccf
     summary: |
-      **First Prize** 
+      **National First Prize** 
   - title: China University Computer Competition - Team programming ladder Competition
     url: 2023CCCC.pdf
     # certificate_url: https://www.datacamp.com
@@ -182,16 +160,24 @@ awards:
     awarder: Computer Education Research Association of Chinese Universities
     icon: cccc
     summary: |
-      **Individual Third prize** 
+      **National Third prize** 
+  - title: China University Computer Competition - Team programming ladder Competition
+    url: 2023CCCC.pdf
+    # certificate_url: https://www.datacamp.com
+    date: '2024-05-05'
+    awarder: Computer Education Research Association of Chinese Universities
+    icon: cccc
+    summary: |
+      **National Second prize** 
 ---
 
-## I am currently an Undergraduate student in Wuhan University
+## I am currently an undergraduate student at Wuhan University. 
 
-I plan to persue a **MS/PhD** degree in the United States. My goal is to enhance my research and engineering skills in my field of interest, and I hope to engage with experts in related areas and receive their guidance.
+In July-August 2024, I will go to University of California, Davis to participate in Professor Yubei Chen's research group to conduct **Unsupervised Learning** and **World Model** research. I hope to have an internship in a company related to my research interests after the summer research.
 
 My research interests include:
 
-- **Machine Learning with Graphs**
-- **Self-supervised Learning on Graphs**
+- **Graph Neural Networks**
+- **Self-supervised Learning**
 
 ### Cherish the side & Live well～
