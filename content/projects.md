@@ -20,16 +20,16 @@ sections:
           image: singularityodyssey.png
           url: https://github.com/MikukuOvO/Singularity-Odyssey
           url: https://github.com/MikukuOvO/PytorchGAT
-        - title: BSACO
-          description: Improvement of ant colony algorithm based on block and search -- Traveling salesman problem
-          image: cpp.png
-          url: https://github.com/MikukuOvO/BSACO
+        # - title: BSACO
+        #   description: Improvement of ant colony algorithm based on block and search -- Traveling salesman problem
+        #   image: cpp.png
+        #   url: https://github.com/MikukuOvO/BSACO
         - title: RISC-V five-stage pipeline CPU design
           description: Using Verilog to simulate a CPU with interactive and graphics on FPGA board
           image: risc-v.png
           url: https://github.com/MikukuOvO/PipelineCPU
-        - title: WHU-OPCP-Platfrom
-          description: An OPCP platfrom built with Vue + Django, with CGROUP & docker used for the judger, which gives an stable & interactive environment
-          image: WHU-OPCP.png
-          url: https://github.com/hz826/WHU-OPCP
+        # - title: WHU-OPCP-Platfrom
+        #   description: An OPCP platfrom built with Vue + Django, with CGROUP & docker used for the judger, which gives an stable & interactive environment
+        #   image: WHU-OPCP.png
+        #   url: https://github.com/hz826/WHU-OPCP
 ---

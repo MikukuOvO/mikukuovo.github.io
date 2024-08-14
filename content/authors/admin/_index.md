@@ -21,8 +21,8 @@ role: Undergraduate student in Wuhan University
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Wuhan University
+    url: https://www.whu.edu.cn
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -30,10 +30,14 @@ profiles:
   - icon: at-symbol
     url: 'mailto:mikukuovo@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/yfngln6
+  # - icon: brands/x
+  #   url: https://twitter.com/yfngln6
   - icon: brands/github
     url: https://github.com/MikukuOvO
+  - icon: brands/instagram
+    url: https://www.instagram.com/fenglin_yu/?next=%2F
+  - icon: brands/orcid
+    url: https://orcid.org/my-orcid?orcid=0009-0000-4673-5334
 
 education:
   - area: B.E. Computer Science
@@ -41,15 +45,16 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |2-
-      GPA: 3.63/4.0 Average Score: 87/100
-      
-      Courses included:
-      - Linear Algebra: 97/100
-      - Algorithm design and analysis: 94/100
-      - Machine Learning: 91/100
-      - Computer Network: 93/100
+      Average Score: 87/100
 
 work:
+  - position: Visiting Students
+    company_name: University of California, Davis
+    date_start: 2024-07-01
+    date_end: ''
+    summary: |2-
+      Supervisor:
+      Prof. **Yubei Chen**
   - position: Remote Research Assistant
     company_name: Hong Kong University of Science and Technology
     date_start: 2024-03-01
@@ -58,10 +63,6 @@ work:
       Supervisor:
       Prof. **Jing TANG**
 
-      Scientific research content:
-      - Graph Neural Networks
-      - Self-Supervised Learning 
-
   - position: Algorithm Intern
     company_name: Huawei Wuhan Research Institute
     company_url: ''
@@ -69,13 +70,7 @@ work:
     date_start: 2024-01-03
     date_end: 2024-03-01
     summary: |2-
-      Supervisor:
-      Senior Engineer **Jinyao XIE**
 
-      Responsibilities include:
-      - Develop methods to identifying different types of network source nodes with the given graph
-      - Introduce graph machine learning methods combined with traditional graph algorithm to handle the network structre diagram has a large number of access rings
-      - Use layout algorithm to visualize the given graph
   - position: Teaching Assistant for the Data Structures course
     company_name: Wuhan University
     company_url: ''
@@ -83,8 +78,6 @@ work:
     date_start: 2023-09-01
     date_end: 2024-01-31
     summary: |2-
-      Supervisor:
-      Prof. **Jingjue JIANG**
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -171,13 +164,11 @@ awards:
       **National Second prize** 
 ---
 
-## I am currently an undergraduate student at Wuhan University. 
-
-In July-August 2024, I will go to University of California, Davis to participate in Professor Yubei Chen's research group to conduct **Unsupervised Learning** and **World Model** research. I hope to have an internship in a company related to my research interests after the summer research.
-
+## Currently an undergraduate student at Wuhan University.
+I'm currently working on several projects involving missing feature completion, ranging from completion using graph neural networks to generalized completion relying solely on patterns among data with unsupervised representation learning methods.
 My research interests include:
 
-- **Graph Neural Networks**
-- **Self-supervised Learning**
+- Unsupervised Representation Learning
+- Data Mining
 
-### Cherish the side & Live well～
+Feel free to contact me!
