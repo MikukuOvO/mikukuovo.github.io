@@ -44,8 +44,6 @@ education:
     institution: Wuhan University
     date_start: 2021-09-01
     date_end: ''
-    summary: |2-
-      Average Score: 87/100
 
 work:
   - position: Visiting Students
