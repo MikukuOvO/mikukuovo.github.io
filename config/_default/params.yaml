@@ -6,7 +6,8 @@
 # Appearance
 appearance:
   mode: system
-  color: teal
+  color: emerald
+  font: serif
 
 # SEO
 marketing:
@@ -30,7 +31,11 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: navbar
+    blox: "navbar"
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Fenglin Yu"
 
 # Site footer
 footer:
@@ -50,6 +55,6 @@ locale:
 # Site features
 features:
   math:
-    enable: true
+    enable: false
   privacy_pack:
     enable: false

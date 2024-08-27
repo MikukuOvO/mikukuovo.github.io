@@ -9,27 +9,22 @@ design:
 
 # Page sections
 sections:
-  - block: projects
+  - block: resume-projects
     content:
-      title: Projects
-      text: Here are a selection of projects that I have worked on over the years.
+      title: Selected Projects
+      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
       # Upload project images to your `assets/media/` folder and reference the filename in the `image` option
       items:
-        - title: Singularity Odyssey
-          description: An intelligent planning assistant
-          image: singularityodyssey.png
-          url: https://github.com/MikukuOvO/Singularity-Odyssey
-          url: https://github.com/MikukuOvO/PytorchGAT
-        # - title: BSACO
-        #   description: Improvement of ant colony algorithm based on block and search -- Traveling salesman problem
-        #   image: cpp.png
-        #   url: https://github.com/MikukuOvO/BSACO
-        - title: RISC-V five-stage pipeline CPU design
-          description: Using Verilog to simulate a CPU with interactive and graphics on FPGA board
-          image: risc-v.png
-          url: https://github.com/MikukuOvO/PipelineCPU
-        # - title: WHU-OPCP-Platfrom
-        #   description: An OPCP platfrom built with Vue + Django, with CGROUP & docker used for the judger, which gives an stable & interactive environment
-        #   image: WHU-OPCP.png
-        #   url: https://github.com/hz826/WHU-OPCP
+        - title: Pandas
+          description: Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+          image: panda.png
+          url: https://github.com/pandas-dev/pandas
+        - title: scikit-learn
+          description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+          image: robot.png
+          url: https://github.com/scikit-learn/scikit-learn
+        - title: PyTorch
+          description: PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+          image: nlp.png
+          url: https://github.com/pytorch/pytorch
 ---
