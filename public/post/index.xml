@@ -5,7 +5,7 @@
     <link>http://localhost:1313/post/</link>
       <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
       <title>Blog</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>😊 I&#39;ll be joining the MSRA&#39;s DKI group as an intern in September, 2024.</title>
+      <title>😊 I&#39;ll be joining the M365 Research group as an intern in September, 2024.</title>
       <link>http://localhost:1313/post/msra/</link>
-      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/msra/</guid>
       <description></description>
     </item>
@@ -23,8 +23,16 @@
     <item>
       <title>🍰 I&#39;ll be joining Prof. Yubei Chen&#39;s lab as a visiting student in the summer of 2024.</title>
       <link>http://localhost:1313/post/ucdavis/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/ucdavis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>🧑🏻‍🏫 I will be a TA for the Data Structures course in 2023Fall.</title>
+      <link>http://localhost:1313/post/tawhu/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tawhu/</guid>
       <description></description>
     </item>
     
