@@ -110,6 +110,15 @@ work:
     date_end: 2024-03-01
     summary: |
       Intent Engine Group
+  
+  - position: Teaching Assistant
+    company_name: Wuhan University
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-09-01
+    date_end: 2024-01-01
+    summary: |
+      Data Structure Course
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

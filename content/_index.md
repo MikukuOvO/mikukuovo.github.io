@@ -31,9 +31,9 @@ sections:
         - statistic: "9"
           description: |
             Awards
-        - statistic: "4"
+        - statistic: "1"
           description: |
-            Profile-Views
+            Courses
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"

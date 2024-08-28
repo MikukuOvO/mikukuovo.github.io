@@ -34,14 +34,6 @@
     </item>
     
     <item>
-      <title>😊 I&#39;ll be joining the MSRA&#39;s DKI group as an intern in September, 2024.</title>
-      <link>http://localhost:1313/post/msra/</link>
-      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/msra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Unsupervised Representation Learning method For Matrix Completion</title>
       <link>http://localhost:1313/publication/unsupervised_representation_mc/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
@@ -64,6 +56,14 @@
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>😊 I&#39;ll be joining the MSRA&#39;s DKI group as an intern in September, 2024.</title>
+      <link>http://localhost:1313/post/msra/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/msra/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -94,7 +94,7 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
     <item>
       <title>🍰 I&#39;ll be joining Prof. Yubei Chen&#39;s lab as a visiting student in the summer of 2024.</title>
       <link>http://localhost:1313/post/ucdavis/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/ucdavis/</guid>
       <description></description>
     </item>
@@ -175,6 +175,14 @@ Add the publication&#39;s **full text** or **supplementary notes** here. You can
 
 Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>🧑🏻‍🏫 I will be a TA for the Data Structures course in 2023Fall.</title>
+      <link>http://localhost:1313/post/tawhu/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tawhu/</guid>
+      <description></description>
     </item>
     
   </channel>
