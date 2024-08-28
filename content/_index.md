@@ -11,14 +11,14 @@ sections:
       username: admin
       text:
     design:
-      css_class: dark
+      css_class: bright
       background:
-        color: black
+        color: bright
         image:
           # Add your image background to `assets/media/`.
-          filename: li-yang-5h_dMuX_7RE-unsplash.webp
+          filename: bac.png
           filters:
-            brightness: 0.4
+            brightness: 0.9
           size: cover
           position: center
           parallax: false
