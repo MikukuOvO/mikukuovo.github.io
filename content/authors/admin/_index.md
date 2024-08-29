@@ -76,13 +76,13 @@ education:
 
 work:
   - position: Research Intern
-    company_name: Microsoft Research Lab
+    company_name: Microsoft Research Lab - Asia
     company_url: ''
     company_logo: ''
     date_start: 2024-09-01
     date_end: ''
     summary: |2-
-      M365 Research Group
+      Data, Knowledge and Intelligence (DKI) Group
 
   - position: Research Intern
     company_name: University of California, Davis
