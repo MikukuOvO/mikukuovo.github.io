@@ -76,7 +76,7 @@ education:
 
 work:
   - position: Research Intern
-    company_name: Microsoft Research Lab - Asia
+    company_name: Microsoft STCA
     company_url: ''
     company_logo: ''
     date_start: 2024-09-01
