@@ -72,11 +72,11 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |
-      GPA: 3.63/4.0, Avg Score: 87/100
+      GPA: 3.63/4.0, Avg Score: 87.3/100
 
 work:
-  - position: Research Intern
-    company_name: Microsoft STCA
+  - position: Software Engineering Intern
+    company_name: Microsoft - STCA
     company_url: ''
     company_logo: ''
     date_start: 2024-09-01
@@ -102,7 +102,7 @@ work:
     summary: |
       Supervisor: Prof. Jing Tang
   
-  - position: Algorithm Intern
+  - position: Software Engineering Intern
     company_name: Huawei Wuhan Research Institute
     company_url: ''
     company_logo: ''
@@ -169,7 +169,7 @@ awards:
     # url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2024-08-25'
     awarder: National First Prize
-  - title: China Computer Federation 'Sinan Cup' Quantum Computing Programming Challenge University group
+  - title: China Computer Federation Quantum Computing Programming Challenge University group
     # url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2023-06-25'
     awarder: National First Prize
