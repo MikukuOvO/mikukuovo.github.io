@@ -72,7 +72,7 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |
-      GPA: 3.63/4.0, Avg Score: 87.3/100
+      GPA: 3.63/4.0, Avg Score: 87.32/100
 
 work:
   - position: Software Engineering Intern
@@ -176,6 +176,9 @@ awards:
   - title: International Collegiate Programming Contest (ACM-ICPC) Asia Regional Contest
     # url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2022-11-25'
+  - title: Chinese Collegiate Programming Contest
+    # url: https://www.coursera.org/learn/neural-networks-deep-learning
+    date: '2022-10-19'
     awarder: Silver Medal
     # icon: coursera
     # summary: |

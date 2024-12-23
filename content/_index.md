@@ -22,38 +22,32 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: stats
-    content:
-      items:
-        - statistic: "1"
-          description: |
-            Publications
-        - statistic: "9"
-          description: |
-            Awards
-        - statistic: "1"
-          description: |
-            Courses
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+  # - block: stats
+  #   content:
+  #     items:
+  #       - statistic: "1"
+  #         description: |
+  #           Publications
+  #       - statistic: "9"
+  #         description: |
+  #           Awards
+  #       - statistic: "1"
+  #         description: |
+  #           Courses
+  #   design:
+  #     # Section background color (CSS class)
+  #     css_class: "bg-gray-100 dark:bg-gray-900"
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
   - block: markdown
     content:
       title: 'Welcome 👋'
       subtitle: ''
       text: |-
-        I'm currently working on several projects involving missing feature completion, ranging from completion using graph neural networks to generalized completion relying solely on patterns among data with unsupervised representation learning methods.
+        I'm dedicated to realizing Auto Computing Vision (ACV), which enables systems to self-manage like cells in the human body.
+        Currently, I'm working on building unsupervised, self-regulating microservice systems using the power of LLMs. Feel free to contact me!
 
-        My research interests include:
-
-        - Unsupervised Representation Learning
-        - Data Mining
-        - Graph Neural Networks
-
-        Feel free to contact me!
     design:
       columns: '1'
   - block: collection
