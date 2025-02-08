@@ -5,7 +5,7 @@
     <link>http://localhost:1313/publication_types/article/</link>
       <atom:link href="http://localhost:1313/publication_types/article/index.xml" rel="self" type="application/rss+xml" />
     <description>Article</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Article</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>AutoKube: A general tool to simplify the management of microservices in Kubernetes by leveraging a LLM-powered agent management system.</title>
+      <title>Enabling Autonomic Microservice Management through Self-Learning Agents</title>
       <link>http://localhost:1313/publication/self_regular_system/</link>
-      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/self_regular_system/</guid>
       <description>&lt;!-- 
 

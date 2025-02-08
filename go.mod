@@ -3,7 +3,7 @@ module github.com/HugoBlox/hugo-blox-builder/starters/blog
 go 1.19
 
 require (
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20241214164702-e45ef47a097e
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20250203135313-cea5cbc3d926
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240519161223-50c6efcd67ff
 )
 

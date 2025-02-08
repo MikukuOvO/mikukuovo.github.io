@@ -41,10 +41,10 @@ profiles:
     url: https://github.com/MikukuOvO
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/fenglin-yu-910031290/
-  # - icon: academicons/google-scholar
-  #   url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/my-orcid?orcid=0009-0000-4673-5334
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=IB6_xVAAAAAJ&hl=en&oi=ao
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/my-orcid?orcid=0009-0000-4673-5334
 
 education:
   # - area: PhD Artificial Intelligence
@@ -72,7 +72,7 @@ education:
     date_start: 2021-09-01
     date_end: ''
     summary: |
-      GPA: 3.63/4.0, Avg Score: 87.32/100
+      Avg Score: 87.32/100
 
 work:
   - position: Software Engineering Intern

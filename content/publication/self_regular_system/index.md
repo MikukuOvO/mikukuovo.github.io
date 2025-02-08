@@ -1,19 +1,18 @@
 ---
-title: "AutoKube: A general tool to simplify the management of microservices in Kubernetes by leveraging a LLM-powered agent management system."
+title: "Enabling Autonomic Microservice Management through Self-Learning Agents"
 authors:
-- Zhiyang Zhang
 - admin
 - Fangkai Yang
 - Xiaoting Qin
+- Zhiyang Zhang
 - Jue Zhang
 - Qingwei Lin
-- Gong Cheng
 - Hongyu Zhang
 - Yingnong Dang
 - Saravan Rajmohan
 - Dongmei Zhang
 - Qi Zhang
-date: "2024-12-15T00:00:00Z"
+date: "2025-01-31T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -40,11 +39,11 @@ featured: false
 links:
 # - name: Custom Link
 #   url: http://example.org
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://arxiv.org/pdf/2501.19056
 url_code: 'https://github.com/microsoft/ACV/blob/main/self_managing_systems/microservice/AutoKube/README.md'
 # url_dataset: '#'
 # url_poster: 'publication/unsupervised_representation_mc/poster.pdf'
-# url_project: ''
+# url_project: https://aka.ms/ACV-LLM
 # url_slides: ''
 # url_source: '#'
 url_video: 'https://youtu.be/IFFLb5mgzY0'
