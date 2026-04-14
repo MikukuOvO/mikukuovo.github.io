@@ -37,6 +37,32 @@ export default function HomeSection() {
                 <p className="song-meta-foot">{item.meta}</p>
               </div>
             </article>
+          ) : item.kind === "Meeting" ? (
+            <article className="pin-card pin-card-meeting" key={item.id}>
+              <div className="meeting-toolbar">
+                <div className="meeting-toolbar-copy">
+                  <div className="pin-meta">
+                    <span className={`pin-kind kind-${item.kind.toLowerCase()}`}>{item.kind}</span>
+                  </div>
+                </div>
+
+                {item.actionHref ? (
+                  <a className="meeting-open-link" href={item.actionHref} target="_blank" rel="noreferrer">
+                    {item.actionLabel}
+                  </a>
+                ) : null}
+              </div>
+
+              <div className="meeting-embed-frame">
+                <iframe
+                  className="meeting-embed"
+                  src={item.embedUrl}
+                  title={item.title}
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                />
+              </div>
+            </article>
           ) : (
             <article className="pin-card" key={item.id}>
               <img src={item.image} alt={item.alt} />

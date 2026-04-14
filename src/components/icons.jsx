@@ -21,6 +21,15 @@ export function HeroStatIcon({ kind }) {
     );
   }
 
+  if (kind === "time") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 7.8v4.7l3 1.8" />
+      </svg>
+    );
+  }
+
   if (kind === "school") {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -70,9 +79,10 @@ export function PdfFileIcon() {
 export function QuickLinkIcon({ kind }) {
   if (kind === "linkedin") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M6.8 8.8H3.7V20h3.1V8.8Zm.2-3.5a1.8 1.8 0 1 0-3.6 0 1.8 1.8 0 0 0 3.6 0ZM20.3 13.2c0-3.1-1.7-4.6-4-4.6-1.8 0-2.6 1-3 1.7V8.8h-3V20h3v-6c0-1.6.3-3.2 2.2-3.2s1.9 1.8 1.9 3.3V20h3V13.2Z" />
-      </svg>
+      <img
+        src="/logo-linkedin.ico"
+        alt=""
+      />
     );
   }
 
@@ -95,9 +105,10 @@ export function QuickLinkIcon({ kind }) {
 
   if (kind === "phone") {
     return (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7.1 4.8c-.4 0-.7.2-.9.6l-1 2.2a2 2 0 0 0 .1 1.8 18 18 0 0 0 8.2 8.2 2 2 0 0 0 1.8.1l2.2-1a1 1 0 0 0 .6-.9v-2.1a1 1 0 0 0-.9-1l-3-.4a1 1 0 0 0-.9.3l-1.1 1.1a13.2 13.2 0 0 1-3.9-3.9l1.1-1.1a1 1 0 0 0 .3-.9l-.4-3a1 1 0 0 0-1-.9H7.1Z" />
-      </svg>
+      <img
+        src="https://play-lh.googleusercontent.com/bk3e0glVbvRC4Z0uEZ5Oso5wjS89r1P_X5e-k3N_UBkTPXZLhGv50rRy7LAuDzzC9w=s256-rw"
+        alt=""
+      />
     );
   }
 

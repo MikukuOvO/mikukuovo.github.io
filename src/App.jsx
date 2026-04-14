@@ -51,6 +51,19 @@ function ProfileHero() {
         <div className="hero-intro">
           <h1>{profile.name}</h1>
         </div>
+
+        <div className="hero-affiliations">
+          {profile.affiliations.map((item) => (
+            <article className="hero-affiliation" key={item.id}>
+              <div className="hero-affiliation-logo-wrap">
+                <img className="hero-affiliation-logo" src={item.logo} alt={`${item.organization} logo`} />
+              </div>
+              <div className="hero-affiliation-copy">
+                <strong>{item.organization}</strong>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
 
       <div className="metric-row">
@@ -86,7 +99,7 @@ function Sidebar() {
       </div>
 
       <div className="panel sidebar-panel">
-        <p className="section-kicker">Quick Links</p>
+        <p className="section-kicker">📬 Contact Me</p>
         <div className="quick-links">
           {quickLinks.map((item) => (
             <a
@@ -100,8 +113,7 @@ function Sidebar() {
                 <QuickLinkIcon kind={item.kind} />
               </div>
               <div className="quick-link-copy">
-                <span className="quick-link-label">{item.label}</span>
-                <strong>{item.value}</strong>
+                <strong>{item.label}</strong>
               </div>
               <span className="quick-link-arrow" aria-hidden="true">
                 <svg viewBox="0 0 20 20">

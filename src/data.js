@@ -9,19 +9,33 @@ export const profile = {
   badges: ["Profile-first", "Media-friendly", "Easy to customize"],
   stats: [
     {
-      label: "Base · Time zone",
-      value: "Pittsburgh, PA · Eastern Time (UTC-4)",
+      label: "Base",
+      value: "Pittsburgh, PA",
       icon: "location",
     },
     {
-      label: "Current role",
-      value: "M.S. student @ CMU",
-      icon: "school",
+      label: "Time zone",
+      value: "Eastern Time (UTC-4)",
+      icon: "time",
     },
     {
       label: "Focus on",
-      value: "Systems, AI, and infrastructure",
+      value: "Systems, AI infra",
       icon: "focus",
+    },
+  ],
+  affiliations: [
+    {
+      id: "affiliation-cmu",
+      role: "M.S. Student",
+      organization: "Carnegie Mellon University",
+      logo: "/logo-cmu-square.png",
+    },
+    {
+      id: "affiliation-sglang",
+      role: "Open-Source Contributor",
+      organization: "SGLang",
+      logo: "/logo-sglang.png",
     },
   ],
   snapshot: [
@@ -83,6 +97,15 @@ export const pinnedItems = [
     stageLink: "https://www.youtube.com/watch?v=Ii0baNYKWTQ",
     lyric:
       "寫一首簡單的歌 讓你的心情快樂\n愛情就像一條河 難免會碰到波折\n這一首簡單的歌 並沒有什麼獨特\n好像我 那麼的平凡 卻又深刻",
+  },
+  {
+    id: "pin-meeting",
+    kind: "Meeting",
+    title: "Book a 30-minute meeting",
+    embedUrl:
+      "https://calendly.com/fenglin02/30min?embed_domain=mikukuovo.github.io&embed_type=Inline",
+    actionHref: "https://calendly.com/fenglin02/30min",
+    actionLabel: "Open in Calendly",
   },
 ];
 
