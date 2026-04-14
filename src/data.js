@@ -1,0 +1,364 @@
+export const profile = {
+  name: "Fenglin Yu",
+  headline: "A personal homepage for product thinking, research, and creative signals",
+  location: "Pittsburgh, PA · Eastern Time (UTC-4)",
+  status: "M.S. student at Carnegie Mellon University working on systems, AI, and infrastructure.",
+  summary:
+    "This version is intentionally profile-first. The homepage introduces your face, current updates, and taste signals before visitors dive into your experience, awards, publications, or CV.",
+  photo: "/profile-avatar.jpg",
+  badges: ["Profile-first", "Media-friendly", "Easy to customize"],
+  stats: [
+    {
+      label: "Base · Time zone",
+      value: "Pittsburgh, PA · Eastern Time (UTC-4)",
+      icon: "location",
+    },
+    {
+      label: "Current role",
+      value: "M.S. student @ CMU",
+      icon: "school",
+    },
+    {
+      label: "Focus on",
+      value: "Systems, AI, and infrastructure",
+      icon: "focus",
+    },
+  ],
+  snapshot: [
+    {
+      label: "Apr 3, 2026",
+      value: "📄 Our paper has been accepted to SIGIR 2026.",
+    },
+    {
+      label: "Feb 20, 2026",
+      value: "💼 I'll join Google in Sunnyvale as a Software Engineering Intern this summer.",
+    },
+  ],
+  rightNow: {
+    title: "What this homepage should do first",
+    description:
+      "Give people a fast sense of your identity, your present momentum, and your personal taste before they scan the more formal sections.",
+  },
+  sideNote: {
+    title: "Why split the site into sections",
+    description:
+      "Experience, awards, publications, and CV stay one click away, but the first screen remains welcoming and personal rather than dense.",
+  },
+};
+
+export const newsItems = [
+  {
+    id: "news-profile",
+    label: "Site update",
+    date: "This week",
+    title: "Reframing the homepage around you, not around a feed.",
+    description:
+      "The opening section now behaves like a personal profile: photo first, context second, and supporting artifacts close behind.",
+  },
+  {
+    id: "news-pins",
+    label: "Pinned content",
+    date: "In progress",
+    title: "Making room for photos, songs, and small personal signals.",
+    description:
+      "Pinned cards let the page carry taste and atmosphere, so visitors see more than titles and dates when they land here.",
+  },
+  {
+    id: "news-structure",
+    label: "Navigation",
+    date: "Next step",
+    title: "Keeping experience, awards, publications, and CV one click away.",
+    description:
+      "This layout is designed for scanning: visitors can switch context quickly without losing the sense that this is one unified profile.",
+  },
+];
+
+export const pinnedItems = [
+  {
+    id: "pin-photo-1",
+    kind: "Photo",
+    title: "Pinned photo slot",
+    meta: "Visual placeholder",
+    description:
+      "Use this for a portrait, event photo, travel image, studio shot, or any visual you want associated with your identity.",
+    image: "/pin-city.svg",
+    alt: "Abstract pinned photo placeholder",
+  },
+  {
+    id: "pin-song",
+    kind: "Song",
+    title: "Song on repeat",
+    meta: "Music placeholder",
+    description:
+      "Add the track you are looping this month and one sentence on why it matters right now.",
+    image: "/pin-song.svg",
+    alt: "Abstract song card placeholder",
+  },
+  {
+    id: "pin-photo-2",
+    kind: "Photo",
+    title: "Another pinned moment",
+    meta: "Camera roll placeholder",
+    description:
+      "A second image keeps the page from feeling too corporate. It can be casual, documentary, or simply memorable.",
+    image: "/pin-studio.svg",
+    alt: "Abstract pinned moment placeholder",
+  },
+  {
+    id: "pin-note",
+    kind: "Note",
+    title: "Pinned note or learning thread",
+    meta: "Personal note",
+    description:
+      "This slot is useful for a short belief, an active question, or a monthly note that changes over time.",
+    image: "/pin-note.svg",
+    alt: "Abstract pinned note placeholder",
+  },
+];
+
+export const educationHistory = [
+  {
+    id: "education-cmu",
+    degree: "M.S. in Information Networking",
+    school: "Carnegie Mellon University",
+    logo: "/logo-cmu-square.png",
+    period: "Aug. 2025 - Dec. 2026",
+    location: "Pittsburgh, PA",
+    current: true,
+    summary:
+      "Graduate study in the Information Networking Institute with a strong systems focus across distributed systems, networking, cloud infrastructure, and machine learning systems.",
+    highlights: [
+      "GPA: 4.0 / 4.0 in the Information Networking Institute at Carnegie Mellon University.",
+      "Selected coursework: Distributed Systems, Network and the Internet, Cloud Infrastructure, Machine Learning Systems, Database Systems, Introduction to Computer Systems, and Introduction to Deep Learning.",
+      "Teaching Assistant for 14-736 Distributed Systems, supporting the course while deepening systems and infrastructure expertise.",
+    ],
+  },
+  {
+    id: "education-whu",
+    degree: "B.S. in Computer Science",
+    school: "Wuhan University",
+    logo: "/logo-whu.png",
+    period: "Sep. 2021 - Jun. 2025",
+    location: "Wuhan, China",
+    current: false,
+    summary:
+      "Undergraduate training in computer science across the Hongyi Honor College and School of Computer Science, building the foundation for later systems, research, and engineering work.",
+    highlights: [
+      "Bachelor of Science in Computer Science at Wuhan University, with training spanning algorithms, systems, and software engineering fundamentals.",
+      "Affiliated with both Hongyi Honor College and the School of Computer Science during undergraduate study.",
+      "Teaching Assistant in the Data Structure course, strengthening core algorithmic understanding and instructional experience.",
+    ],
+  },
+];
+
+export const experiences = [
+  {
+    id: "experience-cmu-ta",
+    role: "Teaching Assistant, 14-736 Distributed Systems",
+    organization: "Carnegie Mellon University",
+    logo: "/logo-cmu-square.png",
+    period: "Aug. 2025 - Present",
+    location: "Pittsburgh, PA",
+    current: true,
+    summary:
+      "Supporting the graduate distributed systems course at CMU, helping students build stronger systems intuition across core distributed computing concepts.",
+    highlights: [
+      "Serve as a teaching assistant for 14-736 Distributed Systems in the Information Networking Institute at Carnegie Mellon University.",
+      "Support course delivery, student learning, and technical understanding around distributed systems fundamentals and implementation details.",
+      "Add your specific responsibilities here later, such as office hours, assignment support, lab guidance, recitation, or grading.",
+    ],
+  },
+  {
+    id: "experience-sglang",
+    role: "Open-Source Contributor",
+    organization: "SGLang",
+    logo: "/logo-sglang.png",
+    period: "Dec. 2025 - Present",
+    location: "Open source / Remote",
+    current: false,
+    summary:
+      "Contributing to high-performance diffusion generation and RL training infrastructure, with a focus on adapter systems, rollout efficiency, and scalable inference paths.",
+    highlights: [
+      "Extended SGLang Diffusion to support reinforcement learning over diffusion models, including diffusion rollout sampling for SDE and CPS schemes.",
+      "Designed and optimized the latent log-probability return pipeline to support efficient trajectory collection during rollout and RL-based optimization.",
+      "Built a unified LoRA adapter system with QKV-fused injection, alpha-aware scaling, and dynamic multi-LoRA composition during inference.",
+    ],
+  },
+  {
+    id: "experience-microsoft",
+    role: "Software Engineering Intern",
+    organization: "Microsoft",
+    logo: "/logo-microsoft.png",
+    period: "Sep. 2024 - Jun. 2025",
+    current: false,
+    summary:
+      "Worked on LLM systems spanning autonomic microservice management, privacy mitigation for tool-using agents, and interactive human-AI reasoning interfaces.",
+    highlights: [
+      "Built a hierarchical multi-agent framework for microservice management across 40+ Kubernetes and Azure services, reaching 93.50% task success and 86.11% RCA accuracy.",
+      "Improved distributed reliability and latency by optimizing Redis and RabbitMQ pipelines, skill persistence, retrieval workflows, and model orchestration for LLM agents.",
+      "Developed privacy-aware and human-in-the-loop agent systems, reducing leakage from 26.3% to 5.3% in PrivacyLens and cutting CoThink graph refresh latency by about 45%.",
+    ],
+  },
+  {
+    id: "experience-huawei",
+    role: "Software Engineering Intern",
+    organization: "Huawei",
+    logo: "/logo-huawei.png",
+    period: "Jan. 2024 - Mar. 2024",
+    current: false,
+    summary:
+      "Built graph-based systems for network source node classification and layout, combining algorithmic analysis with interactive visualization.",
+    highlights: [
+      "Implemented a network node classification system using PageRank-style grouping, adjacency checks, and graph algorithms such as topological sort and community detection.",
+      "Raised classification accuracy to 95%+ compared with a previous 60–70% machine-learning-only baseline.",
+      "Developed interactive graph visualization with force-directed layouts, clustering controls, and dynamic edge weighting using D3.js, Gephi API, and Python graph analytics.",
+    ],
+  },
+];
+
+export const awards = [
+  {
+    id: "award-icpc-invitational",
+    title: "ICPC National Invitational Contest",
+    tier: "gold",
+    issuer: "Gold Medal",
+    year: "Jun. 2025",
+  },
+  {
+    id: "award-raicom",
+    title: "RAICOM Robotics Developer Competition",
+    tier: "gold",
+    issuer: "National First Prize · Algorithm Design Track",
+    year: "Aug. 2023",
+  },
+  {
+    id: "award-sinan-cup",
+    title: "CCF 'Sinan Cup' Quantum Computing Programming Challenge",
+    tier: "gold",
+    issuer: "National First Prize",
+    year: "Mar. 2023",
+  },
+  {
+    id: "award-gplt",
+    title: "Group Programming Ladder Tournament",
+    tier: "silver",
+    issuer: "National Second Prize",
+    year: "Apr. 2023",
+  },
+  {
+    id: "award-icpc-regional",
+    title: "ICPC Asia Regional Contest",
+    tier: "silver",
+    issuer: "Silver Medal",
+    year: "Dec. 2022",
+  },
+  {
+    id: "award-ccpc",
+    title: "China Collegiate Programming Contest National Contest",
+    tier: "silver",
+    issuer: "Silver Medal",
+    year: "Nov. 2022",
+  },
+  {
+    id: "award-noip",
+    title: "National Olympiad in Informatics in Provinces (NOIP)",
+    tier: "gold",
+    issuer: "Provincial First Prize",
+    year: "Nov. 2020",
+  },
+  {
+    id: "award-csp-s",
+    title: "CCF Certified Software Professional (CSP-S, Senior Division)",
+    tier: "gold",
+    issuer: "Provincial First Prize",
+    year: "Nov. 2019",
+  },
+];
+
+export const publications = [
+  {
+    id: "publication-dart",
+    title: "Mitigating Structural Overfitting: A Distribution-Aware Rectification Framework for Missing Feature Imputation",
+    authors: "Y Song, F Yu, Y Luo, X Tao, S Qiu, K Han, J Tang",
+    venue: "ACM Special Interest Group on Information Retrieval Conference (SIGIR 2026)",
+    year: "2026",
+    description:
+      "DART combines global structural augmentation, masked autoencoding, and test-time distribution rectification to improve missing feature imputation under distribution shift.",
+  },
+  {
+    id: "publication-privacy-in-action",
+    title: "Privacy in Action: Towards Realistic Privacy Mitigation and Evaluation for LLM-Powered Agents",
+    authors: "S Wang, F Yu, X Liu, X Qin, J Zhang, Q Lin, D Zhang, S Rajmohan",
+    venue: "Conference on Empirical Methods in Natural Language Processing (EMNLP 2025)",
+    year: "2025",
+    description:
+      "A realistic privacy mitigation and evaluation framework for LLM-powered agents operating across tool-using environments.",
+  },
+  {
+    id: "publication-microservice",
+    title: "Enabling autonomic microservice management through self-learning agents",
+    authors: "F Yu, F Yang, X Qin, Z Zhang, J Zhang, Q Lin, H Zhang, Y Dang, S Rajmohan, D Zhang, Q Zhang",
+    venue: "arXiv preprint arXiv:2501.19056",
+    year: "2025",
+    description:
+      "A self-learning agent system for autonomic microservice management that adapts to service-specific environments without prior configuration knowledge.",
+  },
+  {
+    id: "publication-cloud-detection",
+    title: "YOLO, Faster R-CNN, and SSD for cloud detection",
+    authors: "F Yu",
+    venue: "International Conference on Machine Learning and Automation (ICMLA 2024)",
+    year: "2024",
+    description:
+      "A comparative study of object detection models for cloud detection, examining accuracy and optimization tradeoffs in a visually similar target domain.",
+  },
+];
+
+export const cvData = {
+  profile: [
+    "Write a two- or three-line summary of the kind of work you want to be known for.",
+    "Name the domains, industries, or problem spaces you are especially drawn to.",
+    "Keep the wording recruiter-friendly even if the rest of the site feels more personal.",
+  ],
+  skills: [
+    "Product strategy",
+    "UX research",
+    "Prototyping",
+    "Frontend systems",
+    "Technical writing",
+    "Presentation design",
+    "Cross-functional collaboration",
+    "Data storytelling",
+  ],
+  education: [
+    {
+      id: "education-cmu",
+      school: "Carnegie Mellon University",
+      detail: "M.S. in Information Networking, Information Networking Institute, GPA 4.0/4.0",
+    },
+    {
+      id: "education-whu",
+      school: "Wuhan University",
+      detail: "B.S. in Computer Science, Hongyi Honor College & School of Computer Science",
+    },
+  ],
+  projects: [
+    {
+      id: "project-1",
+      title: "Selected project or thesis",
+      description:
+        "A single line on what you built, studied, or launched and what changed because of it.",
+    },
+    {
+      id: "project-2",
+      title: "Another meaningful project",
+      description:
+        "Choose projects that reinforce the same narrative as the rest of the site instead of listing everything.",
+    },
+  ],
+  contact: [
+    "Add your email address",
+    "Add your LinkedIn URL",
+    "Add your GitHub, portfolio, or another public link",
+  ],
+};

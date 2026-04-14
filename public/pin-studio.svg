@@ -1,0 +1,19 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="studio-bg" x1="76" y1="54" x2="548" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE8E6"/>
+      <stop offset="0.5" stop-color="#FEF7E0"/>
+      <stop offset="1" stop-color="#E8F0FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="34" fill="url(#studio-bg)"/>
+  <rect x="92" y="74" width="456" height="272" rx="30" fill="white" fill-opacity="0.82"/>
+  <rect x="132" y="118" width="180" height="184" rx="24" fill="#E8F0FE"/>
+  <circle cx="222" cy="178" r="44" fill="#F1F7FF"/>
+  <path d="M152 262C183.234 221.398 211.34 201.097 236.319 201.097C261.893 201.097 285.12 217.948 306 251.65V302H152V262Z" fill="#34A853"/>
+  <rect x="346" y="128" width="160" height="14" rx="7" fill="#EA4335"/>
+  <rect x="346" y="164" width="128" height="12" rx="6" fill="#FBBC05"/>
+  <rect x="346" y="194" width="144" height="12" rx="6" fill="#4285F4"/>
+  <rect x="346" y="242" width="118" height="56" rx="18" fill="#EA4335"/>
+  <path d="M370 269H440" stroke="white" stroke-width="10" stroke-linecap="round"/>
+</svg>

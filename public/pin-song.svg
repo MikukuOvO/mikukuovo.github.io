@@ -1,0 +1,26 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="song-bg" x1="62" y1="36" x2="568" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4285F4"/>
+      <stop offset="0.32" stop-color="#EA4335"/>
+      <stop offset="0.64" stop-color="#FBBC05"/>
+      <stop offset="1" stop-color="#34A853"/>
+    </linearGradient>
+    <linearGradient id="song-card" x1="160" y1="86" x2="482" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F9FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="34" fill="url(#song-bg)"/>
+  <circle cx="136" cy="108" r="48" fill="white" fill-opacity="0.08"/>
+  <circle cx="528" cy="292" r="72" fill="white" fill-opacity="0.08"/>
+  <rect x="162" y="76" width="316" height="268" rx="28" fill="url(#song-card)"/>
+  <circle cx="320" cy="210" r="94" fill="#4285F4"/>
+  <circle cx="320" cy="210" r="72" fill="#EA4335"/>
+  <circle cx="320" cy="210" r="36" fill="#FBBC05"/>
+  <circle cx="320" cy="210" r="18" fill="#E6F4EA"/>
+  <path d="M448 108L472 132" stroke="#34A853" stroke-width="14" stroke-linecap="round"/>
+  <path d="M204 116H286" stroke="#4285F4" stroke-opacity="0.82" stroke-width="12" stroke-linecap="round"/>
+  <path d="M204 145H360" stroke="#EA4335" stroke-opacity="0.58" stroke-width="10" stroke-linecap="round"/>
+  <path d="M204 295H422" stroke="#34A853" stroke-opacity="0.45" stroke-width="10" stroke-linecap="round"/>
+</svg>
