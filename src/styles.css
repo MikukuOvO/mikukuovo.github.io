@@ -1270,9 +1270,15 @@ img {
 
 .timeline-role-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.timeline-role-copy {
+  min-width: 0;
 }
 
 .timeline-role-row h3 {
@@ -1287,6 +1293,12 @@ img {
 .section-panel .inline-badge {
   background: var(--section-soft);
   color: var(--section-accent-dark);
+}
+
+.inline-badge-future,
+.section-panel .inline-badge-future {
+  background: #e8f0fe;
+  color: #1a73e8;
 }
 
 .timeline-org {

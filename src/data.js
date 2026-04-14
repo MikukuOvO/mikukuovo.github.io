@@ -95,12 +95,10 @@ export const educationHistory = [
     period: "Aug. 2025 - Dec. 2026",
     location: "Pittsburgh, PA",
     current: true,
-    summary:
-      "Graduate study in the Information Networking Institute with a strong systems focus across distributed systems, networking, cloud infrastructure, and machine learning systems.",
     highlights: [
-      "GPA: 4.0 / 4.0 in the Information Networking Institute at Carnegie Mellon University.",
+      "GPA: 4.0 / 4.0",
+      "Scholarship: INI Scholarship.",
       "Selected coursework: Distributed Systems, Network and the Internet, Cloud Infrastructure, Machine Learning Systems, Database Systems, Introduction to Computer Systems, and Introduction to Deep Learning.",
-      "Teaching Assistant for 14-736 Distributed Systems, supporting the course while deepening systems and infrastructure expertise.",
     ],
   },
   {
@@ -111,31 +109,43 @@ export const educationHistory = [
     period: "Sep. 2021 - Jun. 2025",
     location: "Wuhan, China",
     current: false,
-    summary:
-      "Undergraduate training in computer science across the Hongyi Honor College and School of Computer Science, building the foundation for later systems, research, and engineering work.",
     highlights: [
-      "Bachelor of Science in Computer Science at Wuhan University, with training spanning algorithms, systems, and software engineering fundamentals.",
-      "Affiliated with both Hongyi Honor College and the School of Computer Science during undergraduate study.",
-      "Teaching Assistant in the Data Structure course, strengthening core algorithmic understanding and instructional experience.",
+      "GPA: 3.63 / 4.0",
+      "Hongyi Honor College & School of Computer Science.",
+      "Scholarships: Lei Jun Innovation Scholarship; First-Class Competition Scholarship.",
     ],
   },
 ];
 
 export const experiences = [
   {
+    id: "experience-google",
+    role: "Software Engineering Intern",
+    organization: "Google",
+    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_200_200/B4EZmhegXHGcAM-/0/1759350753990/google_logo?e=2147483647&t=Hzaw0d0Yz1Yi-_mDuQ6JQo-Ph41AG50Z8pWjyaeTI0k&v=beta",
+    period: "May. 2026 - Aug. 2026",
+    location: "Sunnyvale, CA",
+    badge: "Future",
+    badgeVariant: "future",
+    current: false,
+    summary:
+      "Incoming summer internship on Google's network infrastructure team in Sunnyvale.",
+    highlights: [
+      "Incoming SWE intern on the Network Infrastructure team in Sunnyvale for Summer 2026.",
+    ],
+  },
+  {
     id: "experience-cmu-ta",
-    role: "Teaching Assistant, 14-736 Distributed Systems",
+    role: "Teaching Assistant",
     organization: "Carnegie Mellon University",
     logo: "/logo-cmu-square.png",
-    period: "Aug. 2025 - Present",
+    period: "Jan. 2026 - Present",
     location: "Pittsburgh, PA",
     current: true,
     summary:
       "Supporting the graduate distributed systems course at CMU, helping students build stronger systems intuition across core distributed computing concepts.",
     highlights: [
       "Serve as a teaching assistant for 14-736 Distributed Systems in the Information Networking Institute at Carnegie Mellon University.",
-      "Support course delivery, student learning, and technical understanding around distributed systems fundamentals and implementation details.",
-      "Add your specific responsibilities here later, such as office hours, assignment support, lab guidance, recitation, or grading.",
     ],
   },
   {
@@ -145,7 +155,7 @@ export const experiences = [
     logo: "/logo-sglang.png",
     period: "Dec. 2025 - Present",
     location: "Open source / Remote",
-    current: false,
+    current: true,
     summary:
       "Contributing to high-performance diffusion generation and RL training infrastructure, with a focus on adapter systems, rollout efficiency, and scalable inference paths.",
     highlights: [
