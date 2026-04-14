@@ -75,44 +75,14 @@ export const newsItems = [
 
 export const pinnedItems = [
   {
-    id: "pin-photo-1",
-    kind: "Photo",
-    title: "Pinned photo slot",
-    meta: "Visual placeholder",
-    description:
-      "Use this for a portrait, event photo, travel image, studio shot, or any visual you want associated with your identity.",
-    image: "/pin-city.svg",
-    alt: "Abstract pinned photo placeholder",
-  },
-  {
     id: "pin-song",
     kind: "Song",
-    title: "Song on repeat",
-    meta: "Music placeholder",
-    description:
-      "Add the track you are looping this month and one sentence on why it matters right now.",
-    image: "/pin-song.svg",
-    alt: "Abstract song card placeholder",
-  },
-  {
-    id: "pin-photo-2",
-    kind: "Photo",
-    title: "Another pinned moment",
-    meta: "Camera roll placeholder",
-    description:
-      "A second image keeps the page from feeling too corporate. It can be casual, documentary, or simply memorable.",
-    image: "/pin-studio.svg",
-    alt: "Abstract pinned moment placeholder",
-  },
-  {
-    id: "pin-note",
-    kind: "Note",
-    title: "Pinned note or learning thread",
-    meta: "Personal note",
-    description:
-      "This slot is useful for a short belief, an active question, or a monthly note that changes over time.",
-    image: "/pin-note.svg",
-    alt: "Abstract pinned note placeholder",
+    title: "一首簡單的歌",
+    meta: "Wang Leehom · Shangri-La · 2004",
+    artist: "王力宏",
+    stageLink: "https://www.youtube.com/watch?v=Ii0baNYKWTQ",
+    lyric:
+      "寫一首簡單的歌 讓你的心情快樂\n愛情就像一條河 難免會碰到波折\n這一首簡單的歌 並沒有什麼獨特\n好像我 那麼的平凡 卻又深刻",
   },
 ];
 
