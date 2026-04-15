@@ -193,6 +193,7 @@ export const experiences = [
     organization: "Microsoft",
     logo: "/logo-microsoft.png",
     period: "Sep. 2024 - Jun. 2025",
+    location: "Beijing, China",
     current: false,
     summary:
       "Worked on LLM systems spanning autonomic microservice management, privacy mitigation for tool-using agents, and interactive human-AI reasoning interfaces.",
@@ -208,6 +209,7 @@ export const experiences = [
     organization: "Huawei",
     logo: "/logo-huawei.png",
     period: "Jan. 2024 - Mar. 2024",
+    location: "Wuhan, China",
     current: false,
     summary:
       "Built graph-based systems for network source node classification and layout, combining algorithmic analysis with interactive visualization.",
